@@ -65,8 +65,7 @@
 
     <!-- SLIDER/CARRUSEL PRINCIPAL DE LA PÁGINA -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-aos="fade-down" data-aos-easing="linear"
-        data-aos-duration="1500">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -76,30 +75,29 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active c-item">
+            <div class="carousel-item active c-item" data-bs-interval="3000">
                 <div class="overlay"></div> <!-- Superposición con el color específico y opacidad -->
                 <img src="img/carousel1.png" class="d-block w-100 c-img" alt="...">
             </div>
-            <div class="carousel-item c-item">
+            <div class="carousel-item c-item" data-bs-interval="3000">
                 <div class="overlay"></div> <!-- Superposición con el color específico y opacidad -->
                 <img src="img/carousel2.png" class="d-block w-100 c-img" alt="...">
             </div>
-            <div class="carousel-item c-item">
+            <div class="carousel-item c-item" data-bs-interval="3000">
                 <div class="overlay"></div> <!-- Superposición con el color específico y opacidad -->
                 <img src="img/carousel3.png" class="d-block w-100 c-img" alt="...">
             </div>
-            <div class="carousel-caption top-0 mt-5 d-done d-md-block">
-                <h1 class="display-5 fw-bold text-capitalize">APRENDE QUÍMICA, <br>FÍSICA, MATEMÁTICA <br>Y
-                    BIOLOGÍA
-                </h1>
-                <p class="mt-5 fs-6 text-uppercase">¿Listo para el desafío? ¡Únete a nuestra comunidad y comienza tu
-                    viaje hacia el conocimiento hoy mismo!</p>
-                <a href="#cursos" class="btn btn-custom">Ver los cursos</a>
-            </div>
-
         </div>
-
+        <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+            <h1 class="display-5 fw-bold text-capitalize">APRENDE QUÍMICA, <br>FÍSICA, MATEMÁTICA <br>Y
+                BIOLOGÍA
+            </h1>
+            <p class="mt-5 fs-6 text-uppercase">¿Listo para el desafío? ¡Únete a nuestra comunidad y comienza tu
+                viaje hacia el conocimiento hoy mismo!</p>
+            <a href="#cursos" class="btn btn-custom">Ver los cursos</a>
+        </div>
     </div>
+
 
     <!-- Sección de los cursos -->
     <div class="container-fluid py-4" id="cursos">
