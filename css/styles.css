@@ -21,8 +21,10 @@
     /* Color del texto al hacer hover */
 }
 
-.dropdown-menu .dropdown-item:active:after {
-    background-color: #15BB44 !important;
+.dropdown-item:focus {
+    background-color: #24be50 !important;
+    color: white !important;
+    /* Cambia este color al que desees */
 }
 
 /* ESTILOS PARA EL CARRUSEL */
