@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 15px;
+    /* Cambia el tamaño de la fuente */
+    font-family: "Montserrat", sans-serif;
+    /* Cambia el tipo de fuente */
+    color: #737373 !important;
+    /* Cambia el color del texto */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #15BB44 !important;
+    /* Color del texto al hacer hover */
+}
+
+.dropdown-menu .dropdown-item:active:after {
+    background-color: #15BB44 !important;
+}
+
+/* ESTILOS PARA EL CARRUSEL */
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.c-item {
+    height: 560px;
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 43, 66, 0.79);
+    z-index: 1;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    /* Asegura que la imagen esté por encima de la superposición */
+}
+
+.carousel-item {
+    z-index: 0;
+    /* Asegura que las imágenes estén detrás del overlay */
+}
+
+.btn-custom {
+    position: relative;
+    overflow: hidden;
+    background-color: #15BB44 !important;
+    color: #ffffff !important;
+    border: none;
+    transition: color 0.3s, transform 0.5s, background-color 0.5s !important;
+    transform-origin: center;
+}
+
+.btn-custom::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out !important;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+.btn-custom:hover {
+    background-color: #128D33 !important;
+    /* Color oscuro al pasar el ratón */
+    transform: scale(1.1) !important;
+    color: #ffffff !important;
+}
+
+.btn-custom:hover::before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+}
+
+
+/* ESTILOS PARA TEXTOS DE LOS CONTENEDORES */
+.container h1,
+.container h2 {
+    color: #252B42;
+}
+
+/* COLORES DE LOS CONTENEDORES */
+.sobre_nosotros {
+    background-color: #C4E4C4;
+}
+
+/* ESTILOS SOBRE LAS CARTAS DE LOS CURSOS */
+.card {
+    margin: 0 0.5em;
+    box-shadow: 1px 2px 8px 0 rgba(22, 22, 26, 0.14);
+    border: none;
+    transition: transform 0.3s;
+}
+
+
+#container_materias .card a {
+    color: inherit;
+    /* Hereda el color del texto de su contenedor */
+    text-decoration: none;
+    /* Elimina el subrayado */
+}
+
+#container_materias .card-chemistry {
+    color: #FF5733 !important;
+    /* Rojo */
+    /* Amarillo */
+}
+
+#container_materias .card-chemistry .progress-bar {
+    background-color: #FF5733;
+}
+
+
+/* Estilos para la tarjeta de Física */
+#container_materias .card-physics {
+    color: #3498DB !important;
+    /* Azul */
+}
+
+/* Estilos para la barra de progreso en la tarjeta de Física */
+#container_materias .card-physics .progress-bar {
+    background-color: #3498DB;
+    /* Azul */
+}
+
+/* Estilos para la tarjeta de Matemáticas */
+#container_materias .card-math {
+    color: #2ECC71 !important;
+    /* Verde esmeralda */
+}
+
+/* Estilos para la barra de progreso en la tarjeta de Matemáticas */
+#container_materias .card-math .progress-bar {
+    background-color: #2ECC71;
+    /* Verde esmeralda */
+}
+
+/* Estilos para la tarjeta de Biología */
+#container_materias .card-biology {
+    color: #FFC300 !important;
+    /* Amarillo anaranjado */
+}
+
+/* Estilos para la barra de progreso en la tarjeta de Biología */
+#container_materias .card-biology .progress-bar {
+    background-color: #FFC300;
+    /* Amarillo anaranjado */
+}
+
+/* Estilos para la tarjeta de Química */
+#container_materias .card-chemistry {
+    color: #FF5733 !important;
+    /* Rojo */
+}
+
+/* Estilos para la barra de progreso en la tarjeta de Química */
+#container_materias .card-chemistry .progress-bar {
+    background-color: #FF5733;
+    /* Rojo */
+}
+
+
+#container_materias .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+
+/* TARJETAS DE SOBRE NOSOTROS */
+.box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+/* ESTILOS SECCION DEL FORMULACIO */
+.enlace_vinculacion {
+    color: #15BB43;
+    font-weight: 550;
+}
+
+.vl {
+    border-left: 2px solid #15BB43;
+    height: 25px;
+    padding: 1px 5px;
+}
+
+/* FOOTER */
+footer {
+    background: #212529;
+}
