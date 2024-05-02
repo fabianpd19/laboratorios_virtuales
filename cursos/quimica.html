@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="/quiz/test.css">
 
+    <link rel="stylesheet" href="/css/quiz-cursos.css">
+
 </head>
 
 <body>
@@ -180,11 +182,81 @@
                     <!-- MÓDULO 3 -->
                     <section id="module3" class="module">
                         <h1>Materiales</h1>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-3">
+                                <!-- TARJETA EJEMPLO -->
+                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
+                                    style="width: 15rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="card-body pt-4">
+                                        <h6 class="card-title fw-semibold">Title</h6>
+                                    </div>
+                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                            alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
+                                    style="width: 15rem;">
+                                    <div class="card-body pt-4">
+                                        <h6 class="card-title fw-semibold">Title</h6>
+                                    </div>
+                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                            alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <!-- TARJETA EJEMPLO -->
+                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
+                                    style="width: 15rem;">
+                                    <div class="card-body pt-4">
+                                        <h6 class="card-title fw-semibold">Title</h6>
+                                    </div>
+                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
+                                    style="width: 15rem;">
+                                    <div class="card-body pt-4">
+                                        <h6 class="card-title fw-semibold">Title</h6>
+                                    </div>
+                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                            alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </section>
 
                     <!-- MÓDULO 4 -->
                     <section id="module4" class="module">
-                        <h1>Quiz</h1>
+                        <!-- <h1>Quiz</h1> -->
+                        <div class="container">
+                            <h1>Quiz</h1>
+                            <div id="quiz"></div>
+                            <h3 class="mb-3">Puntaje</h3>
+                            <div id="scoreContainer" class="score-container" style="display: none;">
+
+                                <p id="score"></p>
+                            </div>
+                            <button id="nextBtn" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion()">Siguiente</button>
+                            <button id="restartBtn" class="btn btn-info btn-block" style="display: none;"
+                                onclick="restartQuiz()">Volver a
+                                hacer el Quiz</button>
+                        </div>
                     </section>
                 </div>
 
@@ -245,7 +317,7 @@
     <!-- Font Awesome: Biblioteca de iconos vectoriales escalables. -->
     <script src="https://kit.fontawesome.com/91728c998d.js" crossorigin="anonymous"></script>
 
-    <script src="/quiz/test.js"></script>
+    <script src="/js/quiz-cursos.js"></script>
 </body>
 
 </html>
