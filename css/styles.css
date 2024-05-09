@@ -201,11 +201,38 @@
     margin-bottom: 30px;
 }
 
-/* ESTILOS SECCION DEL FORMULACIO */
-.enlace_vinculacion {
-    color: #15BB43;
-    font-weight: 550;
+
+/* CONTADOR DE VISTAS */
+.counter {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
 }
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #00713d;
+}
+
+/* #00713d */
 
 .vl {
     border-left: 2px solid #15BB43;
