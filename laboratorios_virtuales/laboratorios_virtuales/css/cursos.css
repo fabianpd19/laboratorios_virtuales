@@ -1,0 +1,50 @@
+.module {
+    display: none;
+    transition: opacity 0.5s ease;
+    /* Define la animación de transición */
+    opacity: 0;
+    /* Inicialmente, los módulos están ocultos */
+}
+
+
+.module.active {
+    display: block;
+    opacity: 1;
+    /* Cuando un módulo está activo, se muestra con una animación de desvanecimiento */
+}
+
+#modulos img {
+    width: 100%;
+}
+
+.cd-40 .card-head img {
+    transition: all 0.3s;
+}
+
+.cd-40:hover {
+    cursor: pointer;
+}
+
+.cd-40:hover .card-head img {
+    transform: scale(1.2);
+}
+
+.cd-40 .card-body .card-img {
+    width: 30px;
+    height: 30px;
+}
+
+.cd-40 .tags li a {
+    font-size: 11px;
+    color: var(--cd-color-white);
+    border-color: var(--cd-color-white);
+    background-color: transparent;
+    font-weight: 200;
+    transition: all 0.3s;
+}
+
+.cd-40 .tags li a:hover {
+    background-color: var(--cd-color-blue);
+    border-color: var(--cd-color-blue) !important;
+    color: var(--cd-color-dark);
+}
