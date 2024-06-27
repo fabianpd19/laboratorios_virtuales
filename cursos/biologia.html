@@ -246,17 +246,16 @@
                         <div class="container">
                             <h1>Quiz</h1>
                             <div id="quiz"></div>
-                            <h3 class="mb-3">Puntaje</h3>
-                            <div id="scoreContainer" class="score-container" style="display: none;">
-
-                                <p id="score"></p>
-                            </div>
                             <button id="nextBtn" class="btn btn-primary btn-block disabled"
                                 onclick="nextQuestion()">Siguiente</button>
-                            <button id="restartBtn" class="btn btn-info btn-block" style="display: none;"
-                                onclick="restartQuiz()">Volver a
-                                hacer el Quiz</button>
+                            <div id="scoreContainer" class="score-container" style="display: none;">
+                                <p id="score" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz()">Volver a hacer el Quiz</button>
                         </div>
+
                     </section>
                 </div>
 

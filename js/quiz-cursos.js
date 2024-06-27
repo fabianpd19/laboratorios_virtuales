@@ -53,12 +53,10 @@ function showQuestion() {
   questionData.options.forEach((option, index) => {
     if (option.type === "image") {
       optionsHTML += `
-                        <div class="option-img-container" onclick="checkAnswer(${
-                          index + 1
-                        })">
-                            <img class="option-img" src="${option.value}">
-                        </div>
-                    `;
+        <div class="option-img-container" onclick="checkAnswer(${index + 1})">
+            <img class="option-img" src="${option.value}">
+        </div>
+      `;
     } else {
       optionsHTML += `<button class="btn btn-secondary btn-block" onclick="checkAnswer(${
         index + 1
@@ -67,13 +65,13 @@ function showQuestion() {
   });
 
   const questionHTML = `
-                <div class="question">
-                    <h3 class="mb-3">Pregunta ${currentQuestion + 1}: ${
+    <div class="question">
+        <h3 class="mb-3">Pregunta ${currentQuestion + 1}: ${
     questionData.question
   }</h3>
-                    <div class="options">${optionsHTML}</div>
-                </div>
-            `;
+        <div class="options">${optionsHTML}</div>
+    </div>
+  `;
 
   document.getElementById("quiz").innerHTML = questionHTML;
 }
@@ -151,9 +149,12 @@ function showScore() {
     }
   });
 
-  document.getElementById(
-    "score"
-  ).innerText = `Puntaje: ${score}/${totalQuestions}`;
+  const scoreMessage = `
+    <strong>Has completado el quiz.</strong><br>
+    <span class="score-value">Puntaje: ${score}/${totalQuestions}</span>
+  `;
+
+  document.getElementById("score").innerHTML = scoreMessage;
 }
 
 // Iniciar el quiz cuando la página esté lista
