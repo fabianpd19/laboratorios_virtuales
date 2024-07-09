@@ -1,49 +1,12 @@
-// Datos de las preguntas y respuestas
-const questions = [
-  {
-    question: "¿Cuál de estas imágenes muestra un gato?",
-    options: [
-      {
-        type: "image",
-        value: "https://picsum.photos/200/200?random=4",
-      },
-      {
-        type: "text",
-        value: "Un gato",
-      },
-      {
-        type: "text",
-        value: "Un perro",
-      },
-    ],
-    correctOption: 1,
-  },
-  {
-    question: "¿Cuál de estas imágenes muestra un perro?",
-    options: [
-      {
-        type: "image",
-        value: "https://picsum.photos/200/200?random=4",
-      },
-      {
-        type: "text",
-        value: "Un gato",
-      },
-      {
-        type: "text",
-        value: "Un perro",
-      },
-    ],
-    correctOption: 3,
-  },
-  // Agrega más preguntas aquí
-];
-
+// quiz.js
 let answers = [];
 let currentQuestion = 0;
-const totalQuestions = questions.length;
+let totalQuestions = 0;
+let questions = [];
 
-function startQuiz() {
+function startQuiz(questionsData) {
+  questions = questionsData;
+  totalQuestions = questions.length;
   showQuestion();
 }
 
@@ -156,6 +119,3 @@ function showScore() {
 
   document.getElementById("score").innerHTML = scoreMessage;
 }
-
-// Iniciar el quiz cuando la página esté lista
-document.addEventListener("DOMContentLoaded", startQuiz);
