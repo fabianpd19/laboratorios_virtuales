@@ -1,27 +1,31 @@
-// quiz.js
-let answers = [];
-let currentQuestion = 0;
-let totalQuestions = 0;
-let questions = [];
+// quiz-cursos.js
+let quizzes = {
+  1: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  2: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+};
 
-function startQuiz(questionsData) {
-  questions = questionsData;
-  totalQuestions = questions.length;
-  showQuestion();
+function startQuiz(quizId, questionsData) {
+  quizzes[quizId].questions = questionsData;
+  quizzes[quizId].totalQuestions = questionsData.length;
+  showQuestion(quizId);
 }
 
-function showQuestion() {
-  const questionData = questions[currentQuestion];
+function showQuestion(quizId) {
+  const quiz = quizzes[quizId];
+  const questionData = quiz.questions[quiz.currentQuestion];
   let optionsHTML = "";
+
   questionData.options.forEach((option, index) => {
     if (option.type === "image") {
       optionsHTML += `
-        <div class="option-img-container" onclick="checkAnswer(${index + 1})">
-            <img class="option-img" src="${option.value}">
+        <div class="option-img-container" onclick="checkAnswer(${quizId}, ${
+        index + 1
+      })">
+          <img class="option-img" src="${option.value}">
         </div>
       `;
     } else {
-      optionsHTML += `<button class="btn btn-secondary btn-block" onclick="checkAnswer(${
+      optionsHTML += `<button class="btn btn-secondary btn-block" onclick="checkAnswer(${quizId}, ${
         index + 1
       })">${option.value}</button>`;
     }
@@ -29,25 +33,27 @@ function showQuestion() {
 
   const questionHTML = `
     <div class="question">
-        <h3 class="mb-3">Pregunta ${currentQuestion + 1}: ${
+      <h3 class="mb-3">Pregunta ${quiz.currentQuestion + 1}: ${
     questionData.question
   }</h3>
-        <div class="options">${optionsHTML}</div>
+      <div class="options">${optionsHTML}</div>
     </div>
   `;
 
-  document.getElementById("quiz").innerHTML = questionHTML;
+  document.getElementById(`quiz${quizId}`).innerHTML = questionHTML;
 }
 
-function checkAnswer(selectedOption) {
-  if (answers[currentQuestion] !== undefined) {
+function checkAnswer(quizId, selectedOption) {
+  const quiz = quizzes[quizId];
+
+  if (quiz.answers[quiz.currentQuestion] !== undefined) {
     return;
   }
 
-  answers[currentQuestion] = selectedOption;
+  quiz.answers[quiz.currentQuestion] = selectedOption;
 
   const options = document.querySelectorAll(
-    ".options button, .options .option-img-container"
+    `#quiz${quizId} .options button, #quiz${quizId} .options .option-img-container`
   );
   options.forEach((option, index) => {
     if (index + 1 !== selectedOption) {
@@ -56,66 +62,69 @@ function checkAnswer(selectedOption) {
     }
   });
 
-  const questionData = questions[currentQuestion];
+  const questionData = quiz.questions[quiz.currentQuestion];
   if (selectedOption === questionData.correctOption) {
     options[selectedOption - 1].style.border = "2px solid green";
   } else {
     options[selectedOption - 1].style.border = "2px solid red";
-    options[questionData.correctOption - 1].style.border = "2px solid green"; // Marcar la opción correcta
-    options[questionData.correctOption - 1].style.opacity = 1; // Eliminar la opacidad de la opción correcta
+    options[questionData.correctOption - 1].style.border = "2px solid green";
+    options[questionData.correctOption - 1].style.opacity = 1;
   }
 
-  // Desactivar clics en todas las opciones después de mostrar la respuesta
   options.forEach((option) => {
     option.onclick = null;
   });
 
-  document.getElementById("nextBtn").classList.remove("disabled");
+  document.getElementById(`nextBtn${quizId}`).classList.remove("disabled");
 }
 
-function nextQuestion() {
-  // Verificar si se ha seleccionado una opción
-  if (answers[currentQuestion] === undefined) {
+function nextQuestion(quizId) {
+  const quiz = quizzes[quizId];
+
+  if (quiz.answers[quiz.currentQuestion] === undefined) {
     alert("Por favor, selecciona una opción antes de continuar.");
     return;
   }
 
-  currentQuestion++;
-  if (currentQuestion < totalQuestions) {
-    showQuestion();
-    document.getElementById("nextBtn").classList.add("disabled");
+  quiz.currentQuestion++;
+  if (quiz.currentQuestion < quiz.totalQuestions) {
+    showQuestion(quizId);
+    document.getElementById(`nextBtn${quizId}`).classList.add("disabled");
   } else {
-    document.getElementById("nextBtn").style.display = "none";
-    document.getElementById("restartBtn").style.display = "block";
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById("scoreContainer").style.display = "block";
-    showScore();
+    document.getElementById(`nextBtn${quizId}`).style.display = "none";
+    document.getElementById(`restartBtn${quizId}`).style.display = "block";
+    document.getElementById(`quiz${quizId}`).style.display = "none";
+    document.getElementById(`scoreContainer${quizId}`).style.display = "block";
+    showScore(quizId);
   }
 }
 
-function restartQuiz() {
-  currentQuestion = 0;
-  answers = [];
-  showQuestion();
-  document.getElementById("nextBtn").style.display = "block";
-  document.getElementById("restartBtn").style.display = "none";
-  document.getElementById("quiz").style.display = "block";
-  document.getElementById("scoreContainer").style.display = "none";
-  document.getElementById("score").innerText = ""; // Limpiar el puntaje
+function restartQuiz(quizId) {
+  const quiz = quizzes[quizId];
+  quiz.currentQuestion = 0;
+  quiz.answers = [];
+  showQuestion(quizId);
+  document.getElementById(`nextBtn${quizId}`).style.display = "block";
+  document.getElementById(`restartBtn${quizId}`).style.display = "none";
+  document.getElementById(`quiz${quizId}`).style.display = "block";
+  document.getElementById(`scoreContainer${quizId}`).style.display = "none";
+  document.getElementById(`score${quizId}`).innerText = ""; // Limpiar el puntaje
 }
 
-function showScore() {
+function showScore(quizId) {
+  const quiz = quizzes[quizId];
   let score = 0;
-  answers.forEach((answer, index) => {
-    if (answer === questions[index].correctOption) {
+
+  quiz.answers.forEach((answer, index) => {
+    if (answer === quiz.questions[index].correctOption) {
       score++;
     }
   });
 
   const scoreMessage = `
     <strong>Has completado el quiz.</strong><br>
-    <span class="score-value">Puntaje: ${score}/${totalQuestions}</span>
+    <span class="score-value">Puntaje: ${score}/${quiz.totalQuestions}</span>
   `;
 
-  document.getElementById("score").innerHTML = scoreMessage;
+  document.getElementById(`score${quizId}`).innerHTML = scoreMessage;
 }

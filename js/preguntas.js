@@ -1,5 +1,4 @@
-// Define las preguntas específicas para cada página aquí
-
+// PREGUNTAS DE PRUEBA IMAGENES - TEXTO
 const questionsPage1 = [
   {
     question: "¿Cuál de estas imágenes muestra un gato?",
@@ -43,7 +42,15 @@ const questionsPage2 = [
   },
 ];
 
-const preguntasBiologia = [
+// ====================================================================================================
+// ====================================================================================================
+// ====================================================================================================
+// ===================================  PREGUNTAS BIOLOGÍA ============================================
+// ====================================================================================================
+// ====================================================================================================
+// ====================================================================================================
+
+const practica1_biologia = [
   {
     question: "¿Cuál es el objetivo de la práctica realizada?",
     options: [
@@ -100,3 +107,79 @@ const preguntasBiologia = [
     correctOption: 2,
   },
 ];
+
+const practica2_biologia = [
+  {
+    question:
+      "¿Qué equipo se menciona como esencial para la observación de los microorganismos?",
+    options: [
+      { type: "text", value: "a) Microscopio" },
+      { type: "text", value: "b) Centrifuga" },
+      { type: "text", value: "c) Espectrofotómetro" },
+      { type: "text", value: "d) Autoclave" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué factor ambiental NO se menciona como objeto de estudio en el crecimiento de cianobacterias?",
+    options: [
+      { type: "text", value: "a) pH del suelo" },
+      { type: "text", value: "b) Temperatura" },
+      { type: "text", value: "c) Nutrientes" },
+      { type: "text", value: "d) Intensidad de la luz" },
+    ],
+    correctOption: 4,
+  },
+  {
+    question:
+      "¿A qué temperatura se indica que debe mantenerse el cultivo de cianobacterias?",
+    options: [
+      { type: "text", value: "a) 25°C" },
+      { type: "text", value: "b) 20°C" },
+      { type: "text", value: "c) 30°C" },
+      { type: "text", value: "d) 37°C" },
+    ],
+    correctOption: 3,
+  },
+  {
+    question:
+      "¿Qué tipo de agua se recomienda para preparar el medio de cultivo?",
+    options: [
+      { type: "text", value: "a) Agua desionizada o destilada" },
+      { type: "text", value: "b) Agua de mar" },
+      { type: "text", value: "c) Agua de grifo" },
+      { type: "text", value: "d) Agua mineral" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Qué acción se recomienda realizar diariamente con el cultivo?",
+    options: [
+      { type: "text", value: "a) Observar y registrar el crecimiento" },
+      { type: "text", value: "b) Cambiar el medio de cultivo" },
+      { type: "text", value: "c) Agitar vigorosamente" },
+      { type: "text", value: "d) Añadir antibióticos" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Una característica destacable de las cianobacterias?",
+    options: [
+      { type: "text", value: "a) Su producción de oxígeno" },
+      { type: "text", value: "b) Su capacidad de producir toxinas" },
+      { type: "text", value: "c) Su resistencia a los antibióticos" },
+      { type: "text", value: "d) Su habilidad para fijar Pb" },
+    ],
+    correctOption: 1,
+  },
+];
+
+// Añade preguntasNuevas al banco de preguntas existente según sea necesario
+
+document.addEventListener("DOMContentLoaded", () => {
+  startQuiz(1, practica1_biologia);
+  startQuiz(2, practica2_biologia);
+  // startQuiz(2, questionsPage2);
+  // startQuiz(3, preguntasBiologia);
+});
