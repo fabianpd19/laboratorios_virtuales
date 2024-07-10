@@ -46,6 +46,11 @@
   transform-origin: .5em 50%;
 }
 
+.btn-toggle.collapsed::before {
+  transform: rotate(0deg);
+}
+
+
 .btn-toggle[aria-expanded="true"] {
   color: rgba(0, 0, 0, .85);
 }
