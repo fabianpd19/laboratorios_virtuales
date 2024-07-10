@@ -575,9 +575,9 @@
                         <h1>Equipos</h1>
                         <div class="row justify-content-center">
                             <div class="col-sm-3">
-                                <!-- TARJETA EJEMPLO -->
+                                <!-- Equipo 1 -->
                                 <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 10rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    style="width: 10rem;" data-bs-toggle="modal" data-bs-target="#microscopioModal">
                                     <div class="card-body pt-3" style="padding: 0.5rem;">
                                         <h6 class="card-title fw-semibold text-center">Microscopio</h6>
                                     </div>
@@ -590,53 +590,60 @@
 
                         <h1>Materiales</h1>
                         <div class="row justify-content-center">
+
+                            <!-- Material 1: Agua esterilizada -->
                             <div class="col-sm-6 col-md-3">
                                 <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    style="width: 11rem;" data-bs-toggle="modal"
+                                    data-bs-target="#aguaesterilizadaModal">
                                     <div class="card-body pt-3" style="padding: 0.5rem;">
                                         <h6 class="card-title fw-semibold text-center">Agua esterilizada</h6>
                                     </div>
                                     <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/agua-esterilizada.png" alt="">
+                                        <img src="../img/curso-biologia/materiales/Agua-destilada.webp" alt="">
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- Material 2: Incubadora -->
                             <div class="col-sm-6 col-md-3">
                                 <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#incubadoraModal">
                                     <div class="card-body pt-3" style="padding: 0.5rem;">
                                         <h6 class="card-title fw-semibold text-center">Incubadora</h6>
                                     </div>
                                     <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/incubadora.png" alt="">
+                                        <img src="../img/curso-biologia/materiales/incubadora.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- Material 3: Matraz de 100ml -->
                             <div class="col-sm-6 col-md-3">
                                 <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#matraz100mlModal">
                                     <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Matraz de 100Ml</h6>
+                                        <h6 class="card-title fw-semibold text-center">Matraz de 100ml</h6>
                                     </div>
                                     <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/matraz.png" alt="">
+                                        <img src="../img/curso-biologia/materiales/matraz.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- Material 4: Termómetro -->
                             <div class="col-sm-6 col-md-3">
                                 <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#termometroModal">
                                     <div class="card-body pt-3" style="padding: 0.5rem;">
                                         <h6 class="card-title fw-semibold text-center">Termómetro</h6>
                                     </div>
                                     <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/termometro.png" alt="">
+                                        <img src="../img/curso-biologia/materiales/termometro.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </section>
 
@@ -808,7 +815,7 @@
 
     <!-- Agregar modals -->
     <script>
-        fetch('../materiales-modals/biologia/modals.html')
+        fetch('../materiales-modals/modals-biologia.html')
             .then(response => response.text())
             .then(data => {
                 document.body.insertAdjacentHTML('beforeend', data);
