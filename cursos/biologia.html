@@ -9,6 +9,8 @@
     <!-- HOJA DE ESTILOS - HOJA PRINCIPAL DE ESTILOS CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 
+    <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
+
     <!-- HOJA DE ESTILOS DE BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -91,13 +93,13 @@
 
                     <div class="collapse show" id="home-collapse">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#module1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                            <li><a href="#submodule1" class="link-js px-3 text-black text-decoration-none d-block"><i
                                         class="fa-solid fa-book-open"></i> Introducción</a></li>
-                            <li><a href="#module2" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-book-open"></i> Lección 2</a></li>
-                            <li><a href="#module3" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-flask-vial"></i> Materiales</a></li>
-                            <li><a href="#module4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                            <li><a href="#submodule2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Equipos y matariales</a></li>
+                            <li><a href="#submodule3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Procedimiento</a></li>
+                            <li><a href="#submodule4" class="link-js px-3 text-black text-decoration-none d-block"><i
                                         class="fa-solid fa-flask-vial"></i> Quiz</a></li>
                         </ul>
                     </div>
@@ -194,7 +196,8 @@
                     <!-- MÓDULOS Y SUBMÓDULOS -->
 
                     <!-- MÓDULO 1 -->
-                    <section id="module1" class="module">
+                    <!-- INTRODUCCIÓN DEL PRIMER LABORATORIO -->
+                    <section id="submodule1" class="module">
                         <div class="container ">
 
                             <section id="introduccion" class="mb-5">
@@ -250,75 +253,150 @@
                     </section>
 
                     <!-- MÓDULO 2 -->
-                    <section id="module2" class="module">
+                    <!-- <section id="submodule2" class="module">
                         <h1>Módulo 2</h1>
-                    </section>
+                    </section> -->
 
-                    <!-- MÓDULO 3 -->
-                    <section id="module3" class="module">
-                        <h1>Materiales</h1>
+                    <!-- MÓDULO 2 -->
+                    <section id="submodule2" class="module">
+                        <h1>Equipos</h1>
                         <div class="row justify-content-center">
                             <div class="col-sm-3">
                                 <!-- TARJETA EJEMPLO -->
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
+                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-5 overflow-hidden"
+                                    style="width: 10rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="card-body pt-3" style="padding: 0.5rem;">
+                                        <h6 class="card-title fw-semibold text-center">Microscopio</h6>
                                     </div>
                                     <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <!-- TARJETA EJEMPLO -->
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
+                                        <img src="../img/curso-biologia/materiales/microscopio.png" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
+                        </div>
+
+                        <h1>Materiales</h1>
+                        <div class="row justify-content-center">
+
+                            <!-- Material 1 -->
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="card-body pt-3" style="padding: 0.5rem;">
+                                        <h6 class="card-title fw-semibold text-center">Lanceta estéril</h6>
                                     </div>
                                     <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                                        <img src="../img/curso-biologia/materiales/lanceta1-500x500-min.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Material 2 -->
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="card-body pt-3" style="padding: 0.5rem;">
+                                        <h6 class="card-title fw-semibold text-center">Bisturí</h6>
+                                    </div>
+                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                        <img src="../img/curso-biologia/materiales/41Ml-tnNssL._AC_-1-300x300.webp"
                                             alt="">
                                     </div>
+                                </div>
+                            </div>
 
+                            <!-- Material 3 -->
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="card-body pt-3" style="padding: 0.5rem;">
+                                        <h6 class="card-title fw-semibold text-center">Portaobjetos</h6>
+                                    </div>
+                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                        <img src="../img/curso-biologia/materiales/Porta-Objetos-Banda-Mate-MICRO.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Material 5 -->
+                            <div class="col-sm-6 col-md-3">
+                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="card-body pt-3" style="padding: 0.5rem;">
+                                        <h6 class="card-title fw-semibold text-center">Cubreobjetos</h6>
+                                    </div>
+                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                        <img src="../img/curso-biologia/materiales/cubreobjetos.png" alt="">
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
                     </section>
 
+                    <section id="submodule3" class="module">
+                        <h1 class="text-center">Procedimiento / Actividades por Desarrollar</h1>
+                        <div class="container mt-5">
+
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Llenar un vaso de precipitados con agua y colocar un bulbo de cebolla sujeto
+                                        con dos o tres
+                                        palillos de manera que la parte inferior quede inmersa en el agua. Al cabo
+                                        de 3-4 días
+                                        aparecerán numerosas raicillas en crecimiento de unos 3 o 4 cm de longitud.
+                                    </p>
+                                </div>
+                                <img src="https://example.com/cebolla.png" class="step-image img-fluid mx-auto d-block"
+                                    alt="Cebolla con raíces en vaso de precipitados">
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+
+                                    <div class="step-number">2</div>
+                                    <p>Seleccionar la raíz más gruesa, cortar el ápice (2-3 mm de longitud) y
+                                        colocarla en una solución
+                                        de fijador. Dejar
+                                        reposar durante 5 minutos.</p>
+                                </div>
+                                <img src="https://example.com/raiz.png" class="step-image img-fluid mx-auto d-block"
+                                    alt="Raíz de cebolla en solución de fijador">
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Lavar la raíz fijada con agua destilada y colocarla en una solución de
+                                        colorante durante 15
+                                        minutos.</p>
+                                </div>
+                                <img src="https://example.com/colorante.png"
+                                    class="step-image img-fluid mx-auto d-block"
+                                    alt="Raíz de cebolla en solución de colorante">
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Colocar la raíz en una lámina portaobjetos, cubrir con un cubreobjetos y
+                                        observar al microscopio.
+                                        Identificar
+                                        las fases de la mitosis en las células de la raíz.</p>
+                                </div>
+                                <img src="https://example.com/microscopio.png"
+                                    class="step-image img-fluid mx-auto d-block"
+                                    alt="Observación de la raíz al microscopio">
+                            </div>
+
+                        </div>
+
+                    </section>
+
                     <!-- MÓDULO 4 -->
-                    <section id="module4" class="module">
+                    <section id="submodule4" class="module">
                         <!-- <h1>Quiz</h1> -->
-                        <div class="container">
+                        <div class="container container-quiz" id="submodule">
                             <h1>Quiz</h1>
                             <div id="quiz"></div>
                             <button id="nextBtn" class="btn btn-primary btn-block disabled"
@@ -439,6 +517,13 @@
     <script src="https://kit.fontawesome.com/91728c998d.js" crossorigin="anonymous"></script>
 
     <script src="../js/quiz-cursos.js"></script>
+    <script src="../js/preguntas.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            startQuiz(preguntasBiologia);
+        });
+    </script>
 </body>
 
 </html>
