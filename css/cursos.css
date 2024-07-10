@@ -79,3 +79,7 @@
     height: auto;
     max-width: 500px;
 }
+
+.modal-title {
+    color: #000000;
+}
