@@ -10,6 +10,12 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
+// Obtener la información del visitante
+$ip_address = $_SERVER['REMOTE_ADDR'];
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'Direct';
+$page_visited = basename($_SERVER['PHP_SELF']);
+
 // Leer el valor actual del contador
 $sql = "SELECT contador FROM visitas WHERE id = 1";
 $result = $conn->query($sql);
@@ -28,6 +34,10 @@ $contador++;
 
 // Actualizar el contador en la base de datos
 $sql = "UPDATE visitas SET contador = $contador WHERE id = 1";
+$conn->query($sql);
+
+// Insertar la información del visitante en la base de datos
+$sql = "INSERT INTO visitas (contador, ip_address, user_agent, referer, page_visited) VALUES ($contador, '$ip_address', '$user_agent', '$referer', '$page_visited')";
 $conn->query($sql);
 
 // Devolver el número de visitas
