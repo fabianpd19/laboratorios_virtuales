@@ -445,7 +445,24 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Script para animar y contar las vistas -->
-    <script src="js/counter.js"></script>
+    <!-- <script src="js/counter.js"></script> -->
+
+    <script>
+        // Función para obtener el contador de visitas mediante AJAX
+        function obtenerContador() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '../php/contador.php', true);
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    document.getElementById('contador').innerText = this.responseText;
+                }
+            };
+            xhr.send();
+        }
+
+        // Llamar a la función cuando se cargue la página
+        window.onload = obtenerContador;
+    </script>
 
     <!-- Inicialización de AOS: Inicia la librería AOS para que aplique las animaciones configuradas. -->
     <script>
