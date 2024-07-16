@@ -583,293 +583,300 @@
                                 <p>Observe a través del microscopio.</p>
                             </div>
                         </div>
+                    </section>
 
-                </div>
-                </section>
+                    </section>
 
-                <!-- MÓDULO 1.4 -->
-                <!-- Quiz Laboratorio 1 -->
-                <section id="submodule1_5" class="module">
-                    <div class="container container-quiz" id="quizContainer1">
-                        <h1>Quiz 1</h1>
-                        <div id="quiz1"></div>
-                        <button id="nextBtn1" class="btn btn-primary btn-block disabled"
-                            onclick="nextQuestion(1)">Siguiente</button>
-                        <div id="scoreContainer1" class="score-container" style="display: none;">
-                            <p id="score1" class="score"></p>
+                    <!-- MÓDULO 1.4 -->
+                    <!-- Quiz Laboratorio 1 -->
+                    <section id="submodule1_5" class="module">
+                        <div class="container container-quiz" id="quizContainer1">
+                            <h1>Quiz 1</h1>
+                            <div id="quiz1"></div>
+                            <button id="nextBtn1" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(1)">Siguiente</button>
+                            <div id="scoreContainer1" class="score-container" style="display: none;">
+                                <p id="score1" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn1" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(1)">Volver a hacer el Quiz</button>
                         </div>
-                        <br>
-                        <button id="restartBtn1" class="btn btn-primary btn-block" style="display: none;"
-                            onclick="restartQuiz(1)">Volver a hacer el Quiz</button>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- ================================== -->
-                <!--            PRACTICA N° 2           -->
-                <!-- ================================== -->
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 2           -->
+                    <!-- ================================== -->
 
-                <section id="submodule2_1" class="module">
-                    <div class="container ">
-                        <section id="introduccion" class="mb-5">
-                            <h1>Actividad enzimática de catalasa </h1>
-                            <p>La actividad enzimática de catalasa se refiere a la capacidad de la enzima catalasa
-                                para descomponer el peróxido de hidrógeno (H2O2) en agua y oxígeno. Esta enzima es
-                                ampliamente distribuida en células animales, vegetales y microorganismos y es
-                                crucial para la vida debido a su función catalítica en la división del peróxido de
-                                hidrógeno, un compuesto altamente tóxico generado en los procesos metabólicos de la
-                                célula. </p>
-                            <p>La catalasa es una enzima de tipo antioxidante y que se encuentra en muchos de los
-                                organismos vivos, la función de esta enzima es separar una solución de peróxido de
-                                hidrógeno (agua oxigenada) en dos partes, que son agua y oxígeno. Este peróxido de
-                                hidrógeno es el producto que tienen algunas células resultado de su metabolismo,
-                                pero debido a que este compuesto es altamente tóxico la catalasa procede a
-                                descomponerlo. </p>
-                            <p>La catalasa es una enzima presente en diversos tejidos, incluido el hígado, y su
-                                actividad puede ser influenciada por factores como la temperatura, la dieta y la
-                                presencia de compuestos específicos. La actividad enzimática de la catalasa es
-                                crucial para la descomposición del peróxido de hidrógeno, un compuesto tóxico, y su
-                                evaluación puede proporcionar información sobre el estado oxidativo y la respuesta a
-                                diferentes condiciones en el hígado de pollo.
-                            </p>
-
-                            <p>La concentración de H2O2 puede aumentar a consecuencia de la autooxidación de la
-                                glucosa y/o la activación de la vía del sorbitol, generando un desequilibrio en el
-                                estado de óxido-reducción de las células. La acumulación de H2O2 puede causar un
-                                daño celular a través de la oxidación de las proteínas, los lípidos, los
-                                carbohidratos y los ácidos nucleicos, contribuyendo en el desarrollo y la progresión
-                                de enfermedades degenerativas y metabólicas como la diabetes mellitus. </p>
-
-                        </section>
-
-                        <section id="objetivos" class="mb-5">
-                            <h2>Objetivos</h2>
-                            <ul>
-                                <li>Identificar como actúa la enzima catalasa en una muestra de hígado de pollo con
-                                    la ayuda de agua oxigenada (peróxido de hidrógeno).</li>
-
-                            </ul>
-                        </section>
-                    </div>
-                </section>
-
-                <!-- MÓDULO 2.2 -->
-                <!-- Equipos / Materiales -->
-                <section id="submodule2_2" class="module">
-                    <div class="container">
-                        <h1>Equipos</h1>
-                        <div class="row justify-content-center">
-                            <h1>N/S</h1>
-                        </div>
-
-                        <h1>Materiales e Insumos</h1>
-                        <div class="row justify-content-center p-3">
-                            <div class="col-sm-6 col-md-3">
-                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#cajaPetriModal">
-                                    <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Caja Petri</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/caja-petri.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-3">
-                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#guantesModal">
-                                    <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Guantes de Nitrilo</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/guantes.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-3">
-                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#pinzasModal">
-                                    <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Pinzas de disección</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/pinzas-manejo.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row justify-content-center p-3">
-                            <div class="col-sm-6 col-md-3">
-                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#cerilloModal">
-                                    <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Cerillo</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/cerillos-fosforos.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Reactivos, muestras, otros -->
-                <section id="submodule2_3" class="module">
-                    <div class="container">
-                        <h1>Reactivos</h1>
-                        <div class="row justify-content-center p-3">
-                            <div class="col-sm-6 col-md-3">
-                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#peroxidoModal">
-                                    <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Peróxido de Hidrógeno 0.5%
-                                        </h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/peroxido-hidrogeno.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-3">
-                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal"
-                                    data-bs-target="#aguaesterilizadaModal">
-                                    <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Agua destilada</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/Agua-destilada.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <h1>Muestras / Otros</h1>
-                        <div class="row justify-content-center p-3">
-                            <div class="col-sm-6 col-md-3">
-                                <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
-                                    style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#higadoModal">
-                                    <div class="card-body pt-3" style="padding: 0.5rem;">
-                                        <h6 class="card-title fw-semibold text-center">Hígado de Pollo</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="../img/curso-biologia/materiales/higado-pollo.jpg " alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                </section>
-
-                <!-- Procedimiento / Actividades por realizar -->
-                <section id="submodule2_4" class="module">
-                    <h1 class="text-center">Procedimiento / Actividades por Desarrollar</h1>
-                    <div class="container mt-5">
-
-                        <h3 class="text-center">Preparación de Experimento con Hígado y Peróxido de Hidrógeno</h3>
-
-                        <div class="procedure-step">
-                            <div class="step-content">
-                                <div class="step-number">1</div>
-                                <p>En una caja Petri colocar 30 ml de agua destilada y rotularla como caja Petri A.
+                    <section id="submodule2_1" class="module">
+                        <div class="container ">
+                            <section id="introduccion" class="mb-5">
+                                <h1>Actividad enzimática de catalasa </h1>
+                                <p>La actividad enzimática de catalasa se refiere a la capacidad de la enzima catalasa
+                                    para descomponer el peróxido de hidrógeno (H2O2) en agua y oxígeno. Esta enzima es
+                                    ampliamente distribuida en células animales, vegetales y microorganismos y es
+                                    crucial para la vida debido a su función catalítica en la división del peróxido de
+                                    hidrógeno, un compuesto altamente tóxico generado en los procesos metabólicos de la
+                                    célula. </p>
+                                <p>La catalasa es una enzima de tipo antioxidante y que se encuentra en muchos de los
+                                    organismos vivos, la función de esta enzima es separar una solución de peróxido de
+                                    hidrógeno (agua oxigenada) en dos partes, que son agua y oxígeno. Este peróxido de
+                                    hidrógeno es el producto que tienen algunas células resultado de su metabolismo,
+                                    pero debido a que este compuesto es altamente tóxico la catalasa procede a
+                                    descomponerlo. </p>
+                                <p>La catalasa es una enzima presente en diversos tejidos, incluido el hígado, y su
+                                    actividad puede ser influenciada por factores como la temperatura, la dieta y la
+                                    presencia de compuestos específicos. La actividad enzimática de la catalasa es
+                                    crucial para la descomposición del peróxido de hidrógeno, un compuesto tóxico, y su
+                                    evaluación puede proporcionar información sobre el estado oxidativo y la respuesta a
+                                    diferentes condiciones en el hígado de pollo.
                                 </p>
-                            </div>
-                            <!-- <img src="../img/curso-biologia/procedimiento/caja-petri-agua.jpg"
-                                    class="step-image img-fluid mx-auto d-block" alt="Caja Petri con agua destilada"> -->
-                        </div>
 
-                        <div class="procedure-step">
-                            <div class="step-content">
-                                <div class="step-number">2</div>
-                                <p>En otra caja Petri colocar 30 ml de Peróxido de Hidrogeno 0.5% y rotularla como
-                                    caja Petri B.</p>
+                                <p>La concentración de H2O2 puede aumentar a consecuencia de la autooxidación de la
+                                    glucosa y/o la activación de la vía del sorbitol, generando un desequilibrio en el
+                                    estado de óxido-reducción de las células. La acumulación de H2O2 puede causar un
+                                    daño celular a través de la oxidación de las proteínas, los lípidos, los
+                                    carbohidratos y los ácidos nucleicos, contribuyendo en el desarrollo y la progresión
+                                    de enfermedades degenerativas y metabólicas como la diabetes mellitus. </p>
+
+                            </section>
+
+                            <section id="objetivos" class="mb-5">
+                                <h2>Objetivos</h2>
+                                <ul>
+                                    <li>Identificar como actúa la enzima catalasa en una muestra de hígado de pollo con
+                                        la ayuda de agua oxigenada (peróxido de hidrógeno).</li>
+
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- MÓDULO 2.2 -->
+                    <!-- Equipos / Materiales -->
+                    <section id="submodule2_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center">
+                                <h1>N/S</h1>
                             </div>
-                            <!-- <img src="../img/curso-biologia/procedimiento/caja-petri-peroxido.jpg"
+
+                            <h1>Materiales e Insumos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#cajaPetriModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Caja Petri</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-biologia/materiales/caja-petri.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#guantesModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Guantes de Nitrilo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-biologia/materiales/guantes.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#pinzasModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Pinzas de disección</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-biologia/materiales/pinzas-manejo.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#cerilloModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Cerillo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-biologia/materiales/cerillos-fosforos.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Reactivos, muestras, otros -->
+                    <section id="submodule2_3" class="module">
+                        <div class="container">
+                            <h1>Reactivos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#peroxidoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Peróxido de Hidrógeno 0.5%
+                                            </h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-biologia/materiales/peroxido-hidrogeno.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#aguaesterilizadaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Agua destilada</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-biologia/materiales/Agua-destilada.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h1>Muestras / Otros</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#higadoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Hígado de Pollo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-biologia/materiales/higado-pollo.jpg " alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </section>
+
+                    <!-- Procedimiento / Actividades por realizar -->
+                    <section id="submodule2_4" class="module">
+                        <h1 class="text-center">Procedimiento / Actividades por Desarrollar</h1>
+                        <div class="container mt-5">
+
+                            <h3 class="text-center">Preparación de Experimento con Hígado y Peróxido de Hidrógeno</h3>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>En una caja Petri colocar 30 ml de agua destilada y rotularla como caja Petri A.
+                                    </p>
+                                </div>
+                                <!-- <img src="../img/curso-biologia/procedimiento/caja-petri-agua.jpg"
+                                    class="step-image img-fluid mx-auto d-block" alt="Caja Petri con agua destilada"> -->
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>En otra caja Petri colocar 30 ml de Peróxido de Hidrogeno 0.5% y rotularla como
+                                        caja Petri B.</p>
+                                </div>
+                                <!-- <img src="../img/curso-biologia/procedimiento/caja-petri-peroxido.jpg"
                                     class="step-image img-fluid mx-auto d-block"
                                     alt="Caja Petri con Peróxido de Hidrógeno"> -->
-                        </div>
-
-                        <div class="procedure-step">
-                            <div class="step-content">
-                                <div class="step-number">3</div>
-                                <p>Cortar con un bisturí un pedazo de hígado en forma cuadrada y colocarla dentro de
-                                    las cajas Petri A durante 3 minutos.</p>
                             </div>
-                            <!-- <img src="../img/curso-biologia/procedimiento/corte-higado.jpg"
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Cortar con un bisturí un pedazo de hígado en forma cuadrada y colocarla dentro de
+                                        las cajas Petri A durante 3 minutos.</p>
+                                </div>
+                                <!-- <img src="../img/curso-biologia/procedimiento/corte-higado.jpg"
                                     class="step-image img-fluid mx-auto d-block" alt="Corte de hígado"> -->
-                        </div>
-
-                        <div class="procedure-step">
-                            <div class="step-content">
-                                <div class="step-number">4</div>
-                                <p>Con una pinza, transferir el pedazo de hígado de la caja Petri A a la caja Petri
-                                    B.</p>
                             </div>
-                            <!-- <img src="../img/curso-biologia/procedimiento/transferencia-higado.jpg"
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Con una pinza, transferir el pedazo de hígado de la caja Petri A a la caja Petri
+                                        B.</p>
+                                </div>
+                                <!-- <img src="../img/curso-biologia/procedimiento/transferencia-higado.jpg"
                                     class="step-image img-fluid mx-auto d-block" alt="Transferencia de hígado"> -->
-                        </div>
-
-                        <div class="procedure-step">
-                            <div class="step-content">
-                                <div class="step-number">5</div>
-                                <p>Observar lo que ocurre.</p>
                             </div>
-                            <!-- <img src="../img/curso-biologia/procedimiento/observacion.jpg"
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">5</div>
+                                    <p>Observar lo que ocurre.</p>
+                                </div>
+                                <!-- <img src="../img/curso-biologia/procedimiento/observacion.jpg"
                                     class="step-image img-fluid mx-auto d-block" alt="Observación del experimento"> -->
-                        </div>
-
-                        <div class="procedure-step">
-                            <div class="step-content">
-                                <div class="step-number">6</div>
-                                <p>Acerque un cerillo encendido a la caja Petri B.</p>
                             </div>
-                            <!-- <img src="../img/curso-biologia/procedimiento/cerillo.jpg"
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">6</div>
+                                    <p>Acerque un cerillo encendido a la caja Petri B.</p>
+                                </div>
+                                <!-- <img src="../img/curso-biologia/procedimiento/cerillo.jpg"
                                     class="step-image img-fluid mx-auto d-block"
                                     alt="Acerca de un cerillo encendido a la caja Petri B"> -->
-                        </div>
-
-                        <div class="procedure-step">
-                            <div class="step-content">
-                                <div class="step-number">7</div>
-                                <p>Observar lo que ocurre.</p>
                             </div>
-                            <!-- <img src="../img/curso-biologia/procedimiento/observacion-cerillo.jpg"
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">7</div>
+                                    <p>Observar lo que ocurre.</p>
+                                </div>
+                                <!-- <img src="../img/curso-biologia/procedimiento/observacion-cerillo.jpg"
                                     class="step-image img-fluid mx-auto d-block"
                                     alt="Observación del cerillo en la caja Petri B"> -->
+                            </div>
+
                         </div>
-
-                    </div>
-                </section>
+                    </section>
 
 
-                <!-- quiz 2 -->
-                <section id="submodule2_5" class="module">
-                    <div class="container container-quiz" id="quizContainer2">
-                        <h1>Quiz 2</h1>
-                        <div id="quiz2"></div>
-                        <button id="nextBtn2" class="btn btn-primary btn-block disabled"
-                            onclick="nextQuestion(2)">Siguiente</button>
-                        <div id="scoreContainer2" class="score-container" style="display: none;">
-                            <p id="score2" class="score"></p>
+                    <!-- quiz 2 -->
+                    <section id="submodule2_5" class="module">
+                        <div class="container container-quiz" id="quizContainer2">
+                            <h1>Quiz 2</h1>
+                            <div id="quiz2"></div>
+                            <button id="nextBtn2" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(2)">Siguiente</button>
+                            <div id="scoreContainer2" class="score-container" style="display: none;">
+                                <p id="score2" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn2" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(2)">Volver a hacer el Quiz</button>
                         </div>
-                        <br>
-                        <button id="restartBtn2" class="btn btn-primary btn-block" style="display: none;"
-                            onclick="restartQuiz(2)">Volver a hacer el Quiz</button>
-                    </div>
-                </section>
+                    </section>
+
+                </div>
 
             </div>
 
         </div>
-
-    </div>
     </div>
 
     <footer class="w-100 py-4 flex-shrink-0">

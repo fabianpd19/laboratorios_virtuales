@@ -253,7 +253,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Ácido láctico" },
       { type: "text", value: "d) Glucosa" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question:
@@ -264,7 +264,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Dióxido de carbono y agua" },
       { type: "text", value: "d) Metano y oxígeno" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question: "¿Qué tipo de enzima es la catalasa?",
@@ -274,7 +274,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Hormonal" },
       { type: "text", value: "d) Estructural" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question:
@@ -285,7 +285,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Precipitación" },
       { type: "text", value: "d) Congelación" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question: "¿Qué tejido es buena fuente de catalasa?",
@@ -295,7 +295,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Piel de cerdo" },
       { type: "text", value: "d) Riñón de cordero" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question:
@@ -306,7 +306,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Mejora en la síntesis de proteínas" },
       { type: "text", value: "d) Aumento de la división celular" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question: "¿En qué organismos se encuentra presente la catalasa?",
@@ -316,7 +316,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Solo en plantas" },
       { type: "text", value: "d) Solo en bacterias" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question: "¿Qué factor puede influir en la actividad de la catalasa?",
@@ -326,7 +326,7 @@ const practica2_biologia = [
       { type: "text", value: "c) Campo magnético" },
       { type: "text", value: "d) Humedad relativa" },
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
 ];
 
