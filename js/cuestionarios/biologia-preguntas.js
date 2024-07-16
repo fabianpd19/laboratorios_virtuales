@@ -244,11 +244,95 @@ const practica1_biologia = [
   },
 ];
 
-// Añade preguntasNuevas al banco de preguntas existente según sea necesario
+const practica2_biologia = [
+  {
+    question: "¿Qué compuesto descompone la enzima catalasa?",
+    options: [
+      { type: "text", value: "a) Peróxido de hidrógeno" },
+      { type: "text", value: "b) Dióxido de carbono" },
+      { type: "text", value: "c) Ácido láctico" },
+      { type: "text", value: "d) Glucosa" },
+    ],
+    correctOption: 0,
+  },
+  {
+    question:
+      "¿En qué se descompone el peróxido de hidrógeno por acción de la catalasa?",
+    options: [
+      { type: "text", value: "a) Agua y oxígeno" },
+      { type: "text", value: "b) Hidrógeno y oxígeno" },
+      { type: "text", value: "c) Dióxido de carbono y agua" },
+      { type: "text", value: "d) Metano y oxígeno" },
+    ],
+    correctOption: 0,
+  },
+  {
+    question: "¿Qué tipo de enzima es la catalasa?",
+    options: [
+      { type: "text", value: "a) Antioxidante" },
+      { type: "text", value: "b) Digestiva" },
+      { type: "text", value: "c) Hormonal" },
+      { type: "text", value: "d) Estructural" },
+    ],
+    correctOption: 0,
+  },
+  {
+    question:
+      "¿Qué se observa cuando la catalasa actúa sobre el peróxido de hidrógeno?",
+    options: [
+      { type: "text", value: "a) Formación de espuma" },
+      { type: "text", value: "b) Cambio de color a rojo" },
+      { type: "text", value: "c) Precipitación" },
+      { type: "text", value: "d) Congelación" },
+    ],
+    correctOption: 0,
+  },
+  {
+    question: "¿Qué tejido es buena fuente de catalasa?",
+    options: [
+      { type: "text", value: "a) Hígado de pollo" },
+      { type: "text", value: "b) Músculo de res" },
+      { type: "text", value: "c) Piel de cerdo" },
+      { type: "text", value: "d) Riñón de cordero" },
+    ],
+    correctOption: 0,
+  },
+  {
+    question:
+      "¿Qué puede causar la acumulación de peróxido de hidrógeno en las células?",
+    options: [
+      { type: "text", value: "a) Daño celular" },
+      { type: "text", value: "b) Aumento de la energía celular" },
+      { type: "text", value: "c) Mejora en la síntesis de proteínas" },
+      { type: "text", value: "d) Aumento de la división celular" },
+    ],
+    correctOption: 0,
+  },
+  {
+    question: "¿En qué organismos se encuentra presente la catalasa?",
+    options: [
+      { type: "text", value: "a) Animales, vegetales y microorganismos" },
+      { type: "text", value: "b) Solo en animales" },
+      { type: "text", value: "c) Solo en plantas" },
+      { type: "text", value: "d) Solo en bacterias" },
+    ],
+    correctOption: 0,
+  },
+  {
+    question: "¿Qué factor puede influir en la actividad de la catalasa?",
+    options: [
+      { type: "text", value: "a) Temperatura" },
+      { type: "text", value: "b) Presión atmosférica" },
+      { type: "text", value: "c) Campo magnético" },
+      { type: "text", value: "d) Humedad relativa" },
+    ],
+    correctOption: 0,
+  },
+];
 
 document.addEventListener("DOMContentLoaded", () => {
   startQuiz(1, practica1_biologia);
-  // startQuiz(2, practica2_biologia);
+  startQuiz(2, practica2_biologia);
   // startQuiz(2, questionsPage2);
   // startQuiz(3, preguntasBiologia);
 });
