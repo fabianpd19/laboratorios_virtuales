@@ -50,7 +50,7 @@ const questionsPage2 = [
 // ====================================================================================================
 // ====================================================================================================
 
-const practica1_biologia = [
+const practica1_biologia_no = [
   {
     question: "¿Cuál es el objetivo de la práctica realizada?",
     options: [
@@ -108,7 +108,7 @@ const practica1_biologia = [
   },
 ];
 
-const practica2_biologia = [
+const practica2_biologia_no = [
   {
     question:
       "¿Qué equipo se menciona como esencial para la observación de los microorganismos?",
@@ -175,11 +175,80 @@ const practica2_biologia = [
   },
 ];
 
+const practica1_biologia = [
+  {
+    question:
+      "¿Qué colorante se usa para teñir el almidón en las células vegetales?",
+    options: [
+      { type: "text", value: "a) Lugol al 1%" },
+      { type: "text", value: "b) Azul de metileno al 1%" },
+      { type: "text", value: "c) Eosina" },
+      { type: "text", value: "d) Safranina" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué estructura celular se tiñe específicamente con azul de metileno en células animales?",
+    options: [
+      { type: "text", value: "a) Núcleo" },
+      { type: "text", value: "b) Membrana celular" },
+      { type: "text", value: "c) Cloroplasto" },
+      { type: "text", value: "d) Pared celular" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué estructura celular se espera observar en las células vegetales que no está presente en las células animales?",
+    options: [
+      { type: "text", value: "a) Pared celular" },
+      { type: "text", value: "b) Núcleo" },
+      { type: "text", value: "c) Mitocondrias" },
+      { type: "text", value: "d) Retículo endoplásmico" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué se recomienda hacer para evitar la contaminación de la muestra?",
+    options: [
+      { type: "text", value: "a) Usar guantes de nitrilo" },
+      { type: "text", value: "b) Agitar vigorosamente la muestra" },
+      { type: "text", value: "c) Exponer la muestra al aire" },
+      { type: "text", value: "d) Usar agua del grifo" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué acción se debe evitar al colocar el cubreobjetos sobre la muestra?",
+    options: [
+      { type: "text", value: "a) La formación de burbujas" },
+      { type: "text", value: "b) El contacto directo con la muestra" },
+      { type: "text", value: "c) El uso de solución isotónica" },
+      { type: "text", value: "d) La observación inmediata al microscopio" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué se debe hacer con el exceso de colorante en la muestra de células animales?",
+    options: [
+      { type: "text", value: "a) Retirarlo con papel secante" },
+      { type: "text", value: "b) Dejarlo para intensificar la tinción" },
+      { type: "text", value: "c) Lavarlo con agua corriente" },
+      { type: "text", value: "d) Agregar más solución isotónica" },
+    ],
+    correctOption: 1,
+  },
+];
+
 // Añade preguntasNuevas al banco de preguntas existente según sea necesario
 
 document.addEventListener("DOMContentLoaded", () => {
   startQuiz(1, practica1_biologia);
-  startQuiz(2, practica2_biologia);
+  // startQuiz(2, practica2_biologia);
   // startQuiz(2, questionsPage2);
   // startQuiz(3, preguntasBiologia);
 });
