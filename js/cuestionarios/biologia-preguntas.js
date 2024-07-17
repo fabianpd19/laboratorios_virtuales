@@ -330,9 +330,221 @@ const practica2_biologia = [
   },
 ];
 
+const practica3_biologia = [
+  {
+    question:
+      "¿Qué contiene la información genética de la mayoría de los seres vivos?",
+    options: [
+      { type: "text", value: "a) ADN" },
+      { type: "text", value: "b) ARN" },
+      { type: "text", value: "c) Proteínas" },
+      { type: "text", value: "d) Lípidos" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Qué componente se utiliza para romper las membranas celulares?",
+    options: [
+      { type: "text", value: "a) Detergente" },
+      { type: "text", value: "b) Alcohol" },
+      { type: "text", value: "c) Sal" },
+      { type: "text", value: "d) Agua destilada" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿En qué se disuelve normalmente el ADN?",
+    options: [
+      { type: "text", value: "a) Agua" },
+      { type: "text", value: "b) Alcohol" },
+      { type: "text", value: "c) Aceite" },
+      { type: "text", value: "d) Vinagre" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Qué se observa como resultado de la extracción?",
+    options: [
+      { type: "text", value: "a) Una capa blanca gelatinosa" },
+      { type: "text", value: "b) Un líquido transparente" },
+      { type: "text", value: "c) Un precipitado negro" },
+      { type: "text", value: "d) Burbujas de gas" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Cuál es la función principal de la sal (NaCl) en la solución?",
+    options: [
+      { type: "text", value: "a) Ayudar a precipitar el ADN" },
+      { type: "text", value: "b) Colorear la muestra" },
+      { type: "text", value: "c) Neutralizar el pH" },
+      { type: "text", value: "d) Disolver las proteínas" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Qué característica tiene el ADN en todos los seres vivos?",
+    options: [
+      { type: "text", value: "a) Estructura química idéntica" },
+      { type: "text", value: "b) Secuencia de bases idéntica" },
+      { type: "text", value: "c) Longitud idéntica" },
+      { type: "text", value: "d) Peso molecular idéntico" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿En qué interfase precipita el ADN?",
+    options: [
+      { type: "text", value: "a) Entre el alcohol y el agua" },
+      { type: "text", value: "b) Entre el aceite y el agua" },
+      { type: "text", value: "c) Entre el detergente y el agua" },
+      { type: "text", value: "d) Entre la sal y el agua" },
+    ],
+    correctOption: 1,
+  },
+];
+
+const practica4_biologia = [
+  {
+    question: "¿Cuál es el sistema de clasificación sanguínea más conocido?",
+    options: [
+      { type: "text", value: "a) Sistema ABO" },
+      { type: "text", value: "b) Sistema Rh" },
+      { type: "text", value: "c) Sistema MNS" },
+      { type: "text", value: "d) Sistema Duffy" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Qué determina el factor Rh en la sangre?",
+    options: [
+      { type: "text", value: "a) Si la sangre es Rh positiva o negativa" },
+      { type: "text", value: "b) Si la sangre es tipo A o B" },
+      { type: "text", value: "c) La cantidad de glóbulos rojos" },
+      { type: "text", value: "d) La presencia de antígenos C y D" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Qué tipo de sangre no expresa los antígenos A ni B?",
+    options: [
+      { type: "text", value: "a) Tipo O" },
+      { type: "text", value: "b) Tipo AB" },
+      { type: "text", value: "c) Tipo A" },
+      { type: "text", value: "d) Tipo B" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué reactivo se utiliza para determinar el tipo A en una muestra de sangre?",
+    options: [
+      { type: "text", value: "a) Anti-A" },
+      { type: "text", value: "b) Anti-B" },
+      { type: "text", value: "c) Anti-D" },
+      { type: "text", value: "d) Anti-AB" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué se observa cuando hay una reacción positiva en la prueba de tipificación sanguínea?",
+    options: [
+      { type: "text", value: "a) Aglutinación" },
+      { type: "text", value: "b) Cambio de color" },
+      { type: "text", value: "c) Formación de burbujas" },
+      { type: "text", value: "d) Precipitación" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué dispositivo se usa para obtener la muestra de sangre del dedo?",
+    options: [
+      { type: "text", value: "a) Lanceta" },
+      { type: "text", value: "b) Jeringa" },
+      { type: "text", value: "c) Aguja" },
+      { type: "text", value: "d) Bisturí" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué se utiliza para mezclar la sangre con los reactivos en el portaobjetos?",
+    options: [
+      { type: "text", value: "a) Palillos" },
+      { type: "text", value: "b) Pipetas" },
+      { type: "text", value: "c) Agujas" },
+      { type: "text", value: "d) Hisopos" },
+    ],
+    correctOption: 1,
+  },
+];
+
+// Preguntas adicionales sobre semen bovino
+const practica5_biologia = [
+  {
+    question:
+      "¿Cuál es el principal indicador de la calidad del semen bovino mencionado?",
+    options: [
+      { type: "text", value: "a) La actividad espermática" },
+      { type: "text", value: "b) El color del semen" },
+      { type: "text", value: "c) El volumen de la muestra" },
+      { type: "text", value: "d) La temperatura de almacenamiento" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué porcentaje de movilidad progresiva se considera normal en semen bovino?",
+    options: [
+      { type: "text", value: "a) Al menos el 50%" },
+      { type: "text", value: "b) Menos del 30%" },
+      { type: "text", value: "c) Exactamente el 75%" },
+      { type: "text", value: "d) Más del 90%" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Qué equipo es esencial para observar la actividad espermática?",
+    options: [
+      { type: "text", value: "a) Microscopio" },
+      { type: "text", value: "b) Centrífuga" },
+      { type: "text", value: "c) Espectrofotómetro" },
+      { type: "text", value: "d) Incubadora" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "¿Qué tipo de movimiento caracteriza a los espermatozoides con movilidad progresiva?",
+    options: [
+      { type: "text", value: "a) Movimiento lineal y constante" },
+      { type: "text", value: "b) Movimiento circular" },
+      { type: "text", value: "c) Movimiento errático" },
+      { type: "text", value: "d) Ausencia de movimiento" },
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "¿Cómo se expresa la actividad espermática?",
+    options: [
+      {
+        type: "text",
+        value: "a) Como un porcentaje de espermatozoides móviles progresivos",
+      },
+      { type: "text", value: "b) En unidades por mililitro" },
+      { type: "text", value: "c) En grados Celsius" },
+      { type: "text", value: "d) En escala de pH" },
+    ],
+    correctOption: 1,
+  },
+];
+
 document.addEventListener("DOMContentLoaded", () => {
   startQuiz(1, practica1_biologia);
   startQuiz(2, practica2_biologia);
-  // startQuiz(2, questionsPage2);
-  // startQuiz(3, preguntasBiologia);
+  startQuiz(3, practica3_biologia);
+  startQuiz(4, practica4_biologia);
+  startQuiz(5, practica5_biologia);
 });

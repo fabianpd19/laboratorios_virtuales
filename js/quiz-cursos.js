@@ -2,6 +2,14 @@
 let quizzes = {
   1: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
   2: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  3: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  4: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  5: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  6: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  7: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  8: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  9: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  10: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
 };
 
 function startQuiz(quizId, questionsData) {
