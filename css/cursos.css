@@ -83,3 +83,12 @@
 .modal-title {
     color: #000000;
 }
+
+.jumbotron {
+    background: #dff0d8;
+    padding: 3rem;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
