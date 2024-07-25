@@ -10,6 +10,12 @@ let quizzes = {
   8: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
   9: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
   10: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  11: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  12: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  13: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  14: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  15: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
+  16: { answers: [], currentQuestion: 0, totalQuestions: 0, questions: [] },
 };
 
 function startQuiz(quizId, questionsData) {
