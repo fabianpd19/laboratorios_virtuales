@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VINCULACIÓN</title>
+    <title>Física</title>
 
     <!-- HOJA DE ESTILOS - HOJA PRINCIPAL DE ESTILOS CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
 
     <!-- HOJA DE ESTILOS DE BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,13 +25,19 @@
 
     <link rel="stylesheet" href="../css/quiz-cursos.css">
 
+    <!-- MathJax. Biblioteca JavaScript que permite la visualización de notación matemática en web. -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo.png" alt="" width="50" class="d-inline-block align-text-center">
+            </a>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-vinculacion.png" alt="" width="180" class="d-inline-block align-text-center">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -40,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#">Inicio</a>
+                        <a class="nav-link mx-2" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,20 +56,20 @@
                             Cursos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Química</a></li>
-                            <li><a class="dropdown-item" href="#">Física</a></li>
-                            <li><a class="dropdown-item" href="#">Matemática</a></li>
-                            <li><a class="dropdown-item" href="#">Biología</a></li>
+                            <li><a class="dropdown-item" href="quimica.html">Química</a></li>
+                            <li><a class="dropdown-item" href="fisica.html">Física</a></li>
+                            <li><a class="dropdown-item" href="matematica.html">Matemática</a></li>
+                            <li><a class="dropdown-item" href="fisica.html">Biología</a></li>
                         </ul>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#">Recursos</a>
+                        <a class="nav-link mx-2" href="../pages/recursos.html">Recursos</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#sobre_nosotros">Sobre nosotros</a>
+                        <a class="nav-link mx-2" href="../index.html#sobre_nosotros">Sobre nosotros</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#contacto">Contacto</a>
+                        <a class="nav-link mx-2" href="../index.html#contacto">Contacto</a>
                     </li>
                 </ul>
 
@@ -79,26 +87,153 @@
     <div class="main-container d-flex">
         <div class="sidebar" id="side_nav">
             <ul class="list-unstyled px-3 pt-3">
+                <!-- Botón para ir a la introducción de todo el curso -->
+                <a href="#inicio" class="link-js btn btn-inicio align-items-center rounded"><i
+                        class="fa-solid fa-door-open"></i>&nbsp;Acerca</a>
+                <!-- ================================== -->
+                <!--            PRACTICA N° 1           -->
+                <!-- ================================== -->
                 <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
                         data-bs-target="#home-collapse" aria-expanded="true">
-                        Módulo 1
+                        Práctica N°1
                     </button>
-
-
                     <div class="collapse show" id="home-collapse">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#module1" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-book-open"></i> Lección 1</a></li>
-                            <li><a href="#module2" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-book-open"></i> Lección 2</a></li>
-                            <li><a href="#module3" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-flask-vial"></i> Materiales</a></li>
-                            <li><a href="#module4" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-flask-vial"></i> Quiz</a></li>
+                            <li><a href="#submodule1_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule1_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Equipos y matariales</a></li>
+                            <!-- <li><a href="#submodule1_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li> -->
+                            <li><a href="#submodule1_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Procedimiento</a></li>
+                            <li><a href="#submodule1_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
                         </ul>
                     </div>
                 </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 2           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse2" aria-expanded="false">
+                        Práctica N°2
+                    </button>
+                    <div class="collapse" id="home-collapse2">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule2_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule2_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Equipos y matariales</a></li>
+                            <li><a href="#submodule2_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li>
+                            <li><a href="#submodule2_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Procedimiento</a></li>
+                            <li><a href="#submodule2_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 3           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse3" aria-expanded="false">
+                        Práctica N°3
+                    </button>
+                    <div class="collapse" id="home-collapse3">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule3_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule3_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Equipos y matariales</a></li>
+                            <li><a href="#submodule3_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li>
+                            <li><a href="#submodule3_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Procedimiento</a></li>
+                            <li><a href="#submodule3_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 4           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse4" aria-expanded="false">
+                        Práctica N°4
+                    </button>
+                    <div class="collapse" id="home-collapse4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule4_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule4_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Equipos y matariales</a></li>
+                            <li><a href="#submodule4_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li>
+                            <li><a href="#submodule4_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Procedimiento</a></li>
+                            <li><a href="#submodule4_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 5           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse5" aria-expanded="false">
+                        Práctica N°5
+                    </button>
+                    <div class="collapse" id="home-collapse5">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule5_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule5_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Equipos y matariales</a></li>
+                            <li><a href="#submodule5_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li>
+                            <li><a href="#submodule5_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Procedimiento</a></li>
+                            <li><a href="#submodule5_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 6           -->
+                <!-- ================================== -->
+                <!-- <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse5" aria-expanded="false">
+                        Práctica N°6
+                    </button>
+                    <div class="collapse" id="home-collapse5">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule6_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule6_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Equipos y matariales</a></li>
+                            <li><a href="#submodule6_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li>
+                            <li><a href="#submodule6_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Procedimiento</a></li>
+                            <li><a href="#submodule6_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li> -->
+
             </ul>
             <hr class="h-color mx-2">
 
@@ -112,185 +247,1918 @@
                 <div class=" dashboard-content px-3 pt-4 w-100 p-3">
                     <!-- INICIO DEL CURSO / INTRODUCCIÓN -->
                     <section id="inicio" class="module">
-                        <section id="about" class="py-5">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <img src="https://via.placeholder.com/400" class="img-fluid rounded-circle mb-3"
-                                            alt="Química">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h2>Acerca del Curso</h2>
-                                        <p class="lead">En Química, te sumergirás en los principios básicos y
-                                            fundamentales de la química. Desde la estructura atómica hasta las
-                                            reacciones químicas, ¡te convertirás en un experto en la materia!</p>
-                                        <a href="#contenido" class="btn btn-primary btn-lg">Empezar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                        <div class="jumbotron text-center">
+                            <h1 class="display-4">Bienvenidos al Curso de Laboratorios de Biología</h1>
+                            <p class="lead">Explora el fascinante mundo de la biología a través de prácticas de
+                                laboratorio interactivas y
+                                educativas.</p>
+                        </div>
 
-                        <section id="contenido" class="bg-light py-5">
-                            <div class="container text-center">
-                                <h2>Contenido Principal</h2>
-                                <p class="lead">¡Descubre los secretos de la materia, las reacciones y mucho más!</p>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Estructura Atómica</h5>
-                                                <p class="card-text">Aprende sobre los componentes básicos de los átomos
-                                                    y cómo interactúan entre sí.</p>
-                                            </div>
+                        <br>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Observación de Células Animales y Vegetales</h5>
+                                            <p class="card-text">La observación microscópica de células animales y
+                                                vegetales permite
+                                                identificar y comparar estructuras celulares específicas, como núcleos,
+                                                cloroplastos y
+                                                almidón, en diferentes tipos celulares. El protocolo abarca la
+                                                extracción de tejido de
+                                                cebolla e hisopado bucal, seguido de su examen bajo microscopio óptico.
+                                                Se emplean técnicas
+                                                de preparación de muestras, incluyendo fijación y tinción con Lugol y
+                                                azul de metileno.</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Enlaces Químicos</h5>
-                                                <p class="card-text">Explora cómo se unen los átomos para formar
-                                                    moléculas y compuestos.</p>
-                                            </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Actividad Enzimática de Catalasa</h5>
+                                            <p class="card-text">La actividad enzimática de la catalasa en tejido
+                                                hepático de pollo presenta
+                                                reacción la descomposición del peróxido de hidrógeno en agua y oxígeno
+                                                por acción de esta
+                                                enzima antioxidante (catalasa). Se proporciona una introducción práctica
+                                                a la bioquímica
+                                                enzimática y el papel de la catalasa en la detoxificación celular.</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Reacciones Químicas</h5>
-                                                <p class="card-text">Descubre cómo ocurren las transformaciones químicas
-                                                    y cómo se representan.</p>
-                                            </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Extracción Casera de ADN</h5>
+                                            <p class="card-text">La extracción casera de ADN a partir de una muestra de
+                                                plátano ofrece una
+                                                introducción accesible a técnicas básicas de biología molecular en un
+                                                entorno no
+                                                especializado. El objetivo es demostrar los principios fundamentales de
+                                                la extracción de
+                                                material genético.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tipos Sanguíneos</h5>
+                                            <p class="card-text">La determinación de grupos sanguíneos utilizando el
+                                                sistema ABO y el factor
+                                                Rh, permite comprender los principios de la inmunohematología y su
+                                                importancia en la
+                                                medicina transfusional. El protocolo incluye la obtención de muestras de
+                                                sangre, aplicación
+                                                de antisueros específicos (Anti-A, Anti-B y Anti-D) y observación de
+                                                reacciones de
+                                                aglutinación.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Actividad Espermática en Pajilla de Semen Bovino</h5>
+                                            <p class="card-text">La evaluación de la actividad espermática en semen
+                                                bovino criopreservado,
+                                                es crucial para determinar la calidad del semen y su potencial de
+                                                fertilización, siendo
+                                                fundamental en programas de reproducción animal y biotecnología
+                                                reproductiva. Enfocado en
+                                                medir y clasificar la movilidad espermática incluyendo la preparación de
+                                                muestras,
+                                                observación microscópica y cuantificación de espermatozoides móviles
+                                                progresivos.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </section>
 
                     <!-- MÓDULOS Y SUBMÓDULOS -->
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 1           -->
+                    <!-- ================================== -->
 
-                    <!-- MÓDULO 1 -->
-                    <section id="module1" class="module">
-                        <h1>Módulo 1</h1>
-                    </section>
-
-                    <!-- MÓDULO 2 -->
-                    <section id="module2" class="module">
-                        <h1>Módulo 2</h1>
-                    </section>
-
-                    <!-- MÓDULO 3 -->
-                    <section id="module3" class="module">
-                        <h1>Materiales</h1>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-3">
-                                <!-- TARJETA EJEMPLO -->
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <!-- TARJETA EJEMPLO -->
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <!-- MÓDULO 4 -->
-                    <section id="module4" class="module">
-                        <!-- <h1>Quiz</h1> -->
+                    <!-- MÓDULO 1.1 -->
+                    <!-- INTRODUCCIÓN DEL PRIMER LABORATORIO -->
+                    <!-- INTRODUCCIÓN -->
+                    <section id="submodule1_1" class="module">
                         <div class="container">
-                            <h1>Quiz</h1>
-                            <div id="quiz"></div>
-                            <h3 class="mb-3">Puntaje</h3>
-                            <div id="scoreContainer" class="score-container" style="display: none;">
-
-                                <p id="score"></p>
-                            </div>
-                            <button id="nextBtn" class="btn btn-primary btn-block disabled"
-                                onclick="nextQuestion()">Siguiente</button>
-                            <button id="restartBtn" class="btn btn-info btn-block" style="display: none;"
-                                onclick="restartQuiz()">Volver a
-                                hacer el Quiz</button>
+                            <section id="introduccion" class="mb-5">
+                                <h1>SEGUNDA LEY DE NEWTON: LEY DE LA FUERZA</h1>
+                                <p>La Segunda Ley de Newton, también conocida como Ley de la Fuerza, es una de las leyes
+                                    más importantes en la física,
+                                    que nos brinda una comprensión profunda sobre cómo los objetos se mueven y cómo las
+                                    fuerzas actúan sobre ellos.
+                                    Esta ley fue formulada por el célebre científico Sir Isaac Newton en el siglo XVII y
+                                    representa un hito clave en la
+                                    historia de la ciencia. Gracias a estudios y experimentos, Newton fue capaz de
+                                    revelar los principios fundamentales
+                                    que rigen el movimiento de los cuerpos, sentando las bases de la física moderna.</p>
+                                <p>La Segunda Ley de Newton ha sido constantemente aplicada y probada, y su validez se
+                                    ha confirmado una y otra vez
+                                    en distintas situaciones y fenómenos naturales. Con su comprensión, podemos desvelar
+                                    los secretos detrás de la
+                                    aceleración, la fuerza y la interacción entre los objetos, lo que nos permite
+                                    analizar y predecir el comportamiento de
+                                    los sistemas en movimiento. En esta guía, exploraremos de manera clara y fascinante
+                                    los conceptos esenciales de esta
+                                    ley, facilitando su comprensión a estudiantes, presentando diversas formas de
+                                    exponer y demostrar estos principios.
+                                    ¡Comencemos con el fascinante mundo de las leyes de Newton y descubrir el poder de
+                                    la fuerza!</p>
+                                <p><strong>La Segunda Ley de Newton</strong> establece que la fuerza neta aplicada a un
+                                    objeto es directamente proporcional a la masa
+                                    del objeto y a su aceleración. Matemáticamente, se expresa de la siguiente manera:
+                                </p>
+                                <p><strong>Fuerza neta (\( F \)) = masa (\( m \)) \(\times\) aceleración (\( a
+                                        \))</strong></p>
+                                <p>Esto significa que, si aplicamos una fuerza mayor a un objeto, este experimentará una
+                                    aceleración mayor. Del mismo
+                                    modo, si la masa del objeto es mayor, su aceleración será menor para una fuerza
+                                    dada.</p>
+                                <p>Sin embargo, es importante destacar que la fuerza neta no es simplemente una fuerza
+                                    individual, sino la suma de
+                                    todas las fuerzas que actúan sobre el objeto. En situaciones donde varias fuerzas
+                                    actúan simultáneamente, utilizamos
+                                    el símbolo de sumatoria (∑) para representar la suma de todas las fuerzas. Por lo
+                                    tanto, la ecuación de la Segunda Ley
+                                    de Newton se puede expresar de la siguiente manera:</p>
+                                <p>\[ \sum F = m \cdot a \]</p>
+                                <p>Donde ∑F representa la sumatoria de todas las fuerzas, m es la masa del objeto y a es
+                                    su aceleración. Esta sumatoria
+                                    nos permite tener en cuenta todas las fuerzas que interactúan con el objeto y
+                                    determinar su efecto combinado en el
+                                    movimiento.</p>
+                                <h2>Relación Fuerza-Aceleración y Masa-Aceleración</h2>
+                                <p>La ecuación (<strong>F = m * a</strong>) nos muestra la relación entre la fuerza, la
+                                    masa y la aceleración. Si aplicamos una fuerza
+                                    constante a un objeto de masa constante, su aceleración será proporcional a la
+                                    fuerza aplicada. Esto significa que una
+                                    mayor fuerza resultará en una mayor aceleración, y viceversa.</p>
+                                <p>Por otro lado, si mantenemos una fuerza constante y aumentamos la masa del objeto, su
+                                    aceleración disminuirá. Esto
+                                    se debe a que una mayor masa requiere una fuerza mayor para lograr la misma
+                                    aceleración.</p>
+                                <h2>Aplicaciones de la Segunda Ley de Newton</h2>
+                                <p>La Segunda Ley de Newton tiene numerosas aplicaciones prácticas en nuestro mundo. Es
+                                    fundamental para entender
+                                    el movimiento de objetos en diversas situaciones, como el diseño de vehículos, el
+                                    análisis de movimientos deportivos,
+                                    la predicción de trayectorias de proyectiles y mucho más.</p>
+                                <p>Por ejemplo, al diseñar un automóvil, se deben considerar las fuerzas ejercidas sobre
+                                    él, como la resistencia del aire y
+                                    la fricción de los neumáticos. Utilizando la Segunda Ley de Newton, los ingenieros
+                                    pueden determinar la fuerza
+                                    necesaria para acelerar el automóvil y la velocidad máxima que puede alcanzar.</p>
+                                <h3>Ejemplo práctico:</h3>
+                                <p>Supongamos que tenemos un automóvil con una masa de 1000 kg y deseamos determinar la
+                                    fuerza necesaria para
+                                    acelerarlo a una tasa de 5 m/s². Utilizaremos la fórmula de la Segunda Ley de
+                                    Newton:</p>
+                                <p>\[ F = m \cdot a \]</p>
+                                <p>Donde:</p>
+                                <ul>
+                                    <li>\( F \) = es la fuerza neta aplicada al automóvil (lo que queremos calcular).
+                                    </li>
+                                    <li>\( m \) = es la masa del automóvil (1000 kg en este caso).</li>
+                                    <li>\( a \) = es la aceleración deseada (5 m/s² en este caso).</li>
+                                </ul>
+                                <p>Sustituyendo los valores en la fórmula, tenemos:</p>
+                                <p>\( F_{\text{neta}} = 1000 \, \text{kg} \cdot 5 \, \text{m/s}^2 \)</p>
+                                <p>Calculando el producto de la masa por la aceleración, obtenemos:</p>
+                                <p>\( F_{\text{neta}} = 5000 \, \text{kg} \cdot \text{m/s}^2 \)</p>
+                                <p>Por lo tanto, la fuerza neta necesaria para acelerar el automóvil a una tasa de 5
+                                    m/s² es de 5000 N (newtons).</p>
+                                <h3>Observaciones:</h3>
+                                <p>Es importante destacar que este cálculo representa la fuerza neta requerida para
+                                    vencer las fuerzas de resistencia y fricción y
+                                    lograr la aceleración deseada. En la práctica, pueden existir otros factores a
+                                    considerar, como el rendimiento del motor y la
+                                    eficiencia de transmisión, que podrían afectar la fuerza real aplicada al automóvil.
+                                    Sin embargo, la Segunda Ley de Newton
+                                    proporciona una base teórica para comprender cómo la fuerza, la masa y la
+                                    aceleración se relacionan en el movimiento de un
+                                    objeto.</p>
+                                <h2>Aspectos importantes para tener en cuenta</h2>
+                                <ul>
+                                    <li><strong>Unidad de medida: Newton (N).</strong> La fuerza se mide en una unidad
+                                        llamada newton (N), en honor a Sir Isaac Newton. El
+                                        newton es una unidad derivada en el Sistema Internacional de Unidades (SI) y se
+                                        define como la fuerza necesaria para
+                                        acelerar una masa de 1 kilogramo a una tasa de 1 metro por segundo al cuadrado.
+                                        Esta unidad nos permite cuantificar y
+                                        comparar la magnitud de las fuerzas aplicadas a los objetos.</li>
+                                    <li><strong>Tamaño y dirección de las fuerzas.</strong> Las fuerzas pueden tener
+                                        diferentes magnitudes y direcciones. Al aplicar la
+                                        Segunda Ley de Newton, es importante considerar tanto la magnitud de la fuerza
+                                        como su dirección. Por ejemplo, una
+                                        fuerza de 10 N aplicada hacia la derecha tendrá un efecto diferente en un objeto
+                                        en comparación con una fuerza de 10 N
+                                        aplicada hacia la izquierda.</li>
+                                    <li><strong>Fuerzas equilibradas y desequilibradas.</strong> La Segunda Ley de
+                                        Newton es fundamental para comprender el movimiento
+                                        de los objetos en nuestro entorno. Nos permite analizar y predecir cómo los
+                                        objetos responderán a las fuerzas aplicadas
+                                        sobre ellos. Esta ley es aplicable a numerosas situaciones de la vida cotidiana,
+                                        como el funcionamiento de vehículos, la
+                                        caída de objetos, los deportes y muchas otras actividades en las que
+                                        interactuamos con fuerzas.</li>
+                                </ul>
+                            </section>
+                            <section id="objetivos" class="mb-5">
+                                <h2>Objetivos</h2>
+                                <ul>
+                                    <li>Comprender la relación entre la fuerza neta, la masa y la aceleración de un
+                                        objeto a través de la aplicación de la Segunda
+                                        Ley de Newton.</li>
+                                    <li>Aplicar la ley de la fuerza en situaciones reales para analizar y predecir el
+                                        movimiento de objetos en función de las fuerzas
+                                        que actúan sobre ellos.</li>
+                                </ul>
+                            </section>
                         </div>
                     </section>
-                </div>
 
-            </div>
+                    <!-- MATERIALES Y REACTIVOS -->
+                    <section id="submodule1_2" class="module">
+                        <div class="container">
+                            <h1>Equipos: Materiales e Insumos</h1>
+                            <div class="row justify-content-center p-3">
+                                <!-- Carril -->
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#carrilModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Carril</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/carril.jpg" alt="Carril">
+                                        </div>
+                                    </div>
+                                </div>
 
-        </div>
-    </div>
+                                <!-- Aerodeslizador o carrito -->
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#aerodeslizadorModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Aerodeslizador</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/carrito.jpg" alt="Aerodeslizador">
+                                        </div>
+                                    </div>
+                                </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="container p-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                class="card-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <!-- Arrancador mecánico -->
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#arrancadorMecanicoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Arrancador mecánico</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/arrancador.png"
+                                                alt="Arrancador mecánico">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tope -->
+                                <!-- <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#topeModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Tope</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/tope.jpg" alt="Tope">
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- Barrera fotoeléctrica contadora -->
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#barreraFotoelectricaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Barrera fotoeléctrica
+                                                contadora</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/barrera-fotoelectrica.jpg"
+                                                alt="Barrera fotoeléctrica contadora">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pesas -->
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#pesasModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Pesas</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/pesas.jpg" alt="Pesas">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Material de montaje -->
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#materialMontajeModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Material de montaje</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/material-montaje.jpg"
+                                                alt="Material de montaje">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Polea -->
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#poleaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Polea</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/polea.jpg" alt="Polea">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <!-- DESARROLLO EXPERIMENTAL -->
+                    <section id="submodule1_3" class="module">
+                        <div class="container">
+                            <h1>Desarrollo Experimental</h1>
+                            <h2>Experimento:</h2>
+                            <h3>Determinación de la relación entre la fuerza aplicada y la aceleración de un carrito
+                            </h3>
+                            <h4>Descripción:</h4>
+                            <p>En este experimento, vamos a investigar la relación entre la fuerza aplicada y la
+                                aceleración de un carrito utilizando un
+                                carril, un sensor de movimiento y un dinamómetro. Vamos a medir la aceleración del
+                                carrito cuando se le aplica una fuerza
+                                constante y comprobar si cumple con la Segunda Ley de Newton.</p>
+                            <h4>Procedimiento:</h4>
+                            <ul>
+                                <li><strong>Preparación del equipo:</strong> Coloca el carril en una superficie plana y
+                                    asegúrate de que esté nivelado. Conecta el sensor de
+                                    movimiento a un sistema de adquisición de datos para registrar la aceleración del
+                                    carrito.</li>
+                                <li><strong>Medición de la masa del carrito:</strong> Utiliza una balanza para medir la
+                                    masa del carrito y anota el valor en tus registros.
+                                    Esta masa permanecerá constante durante el experimento.</li>
+                                <li><strong>Aplicación de la fuerza:</strong> Conecta el dinamómetro al carrito y aplica
+                                    una fuerza constante. Registra el valor de la fuerza
+                                    aplicada y anota el valor en tus registros.</li>
+                                <li><strong>Medición de la aceleración:</strong> Libera el carrito y deja que se mueva a
+                                    lo largo del carril. El sensor de movimiento
+                                    registrará la aceleración del carrito en función del tiempo. Anota los valores de
+                                    aceleración en tus registros.</li>
+                                <li><strong>Repetición del experimento:</strong> Repite el experimento varias veces,
+                                    aplicando diferentes magnitudes de fuerza al carrito.
+                                    Registra los valores de la fuerza aplicada y la aceleración correspondiente en cada
+                                    caso.</li>
+                            </ul>
+                            <h4>Resultados y análisis:</h4>
+                            <p>Registra los datos obtenidos en una tabla que incluya las columnas de fuerza aplicada,
+                                masa del carrito y aceleración.
+                                Calcula el promedio de la aceleración para cada valor de fuerza aplicada y compara los
+                                resultados con la predicción teórica
+                                de la Segunda Ley de Newton.</p>
+                            <p>El análisis de los datos te permitirá determinar si existe una relación lineal entre la
+                                fuerza aplicada y la aceleración del
+                                carrito, confirmando así la validez de la Segunda Ley de Newton. Además, podrás calcular
+                                la constante de proporcionalidad,
+                                que corresponde a la masa del carrito, y verificar si se mantiene constante en todas las
+                                mediciones.</p>
+                        </div>
+                    </section>
+
+                    <!-- PROCEDIMIENTO -->
+                    <section id="submodule1_4" class="module">
+                        <h1 class="text-center">PROCEDIMIENTO / ACTIVIDADES POR DESARROLLAR</h1>
+                        <div class="container mt-5">
+                            <h3 class="text-center">EXPERIMENTO CON CARRIL Y AERODESLIZADOR</h3>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Disponga horizontalmente el carril perfectamente nivelado y junto a él, los
+                                        sensores para medir el tiempo. Mida la distancia que hay entre los sensores.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Acoplar el aerodeslizador a una pesa con un hilo, pasar por la polea. El móvil
+                                        deberá moverse a partir del reposo, arrastrado por la pesa que desciende.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Los sensores medirán el tiempo que tarda en recorrer la distancia entre los
+                                        mismos, de donde se podrá obtener la velocidad y la aceleración del movimiento.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Dispuesto el aerodeslizador al extremo de un sensor, active la señal de tiempo en
+                                        el contador al mismo tiempo que el aire dentro del carril. Suelte el arrancador
+                                        y el aerodeslizador se moverá. Este movimiento es registrado por el contador.
+                                        Los datos seleccionados deberán ser tabulados.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">5</div>
+                                    <p>Manteniendo la masa del aerodeslizador y la distancia que recorre constantes,
+                                        varíe la fuerza que produce el movimiento en las razones uno, dos, tres, cuatro
+                                        y cinco. Registre en cada caso la aceleración del móvil y la fuerza neta.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">6</div>
+                                    <p>Con la misma disposición anterior, manteniendo constante la fuerza que produce el
+                                        movimiento y la distancia recorrida por el aerodeslizador, varíe la masa del
+                                        mismo incrementándole en las razones uno, dos, tres, cuatro y cinco o con masas
+                                        proporcionales. Registre nuevamente la aceleración del mismo y la masa del patín
+                                        bajo estas condiciones.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">7</div>
+                                    <p>Llenar la hoja técnica de datos del procedimiento 5 y 6.</p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-center">Montaje</h3>
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <h5 class="text-center">Imagen 1: Vista del carrito con los pesos correspondientes
+                                        en la pista</h5>
+                                    <img src="../img/curso-fisica/procedimiento/Screenshot_223.png" class="img-fluid"
+                                        alt="Vista del carrito con los pesos correspondientes en la pista">
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-center">Imagen 2: Peso de m2 actuando sobre m1</h5>
+                                    <img src="../img/curso-fisica/procedimiento/Screenshot_223 (2).png"
+                                        class="img-fluid" alt="Peso de m2 actuando sobre m1">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Quiz Laboratorio 1 -->
+                    <section id="submodule1_5" class="module">
+                        <div class="container container-quiz" id="quizContainer1">
+                            <h1>Quiz 1</h1>
+                            <div id="quiz1"></div>
+                            <button id="nextBtn1" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(1)">Siguiente</button>
+                            <div id="scoreContainer1" class="score-container" style="display: none;">
+                                <p id="score1" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn1" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(1)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 2           -->
+                    <!-- ================================== -->
+
+                    <section id="submodule2_1" class="module">
+                        <div class="container">
+                            <section id="introduccion" class="mb-5">
+                                <h1>TEMA DE LA PRÁCTICA: FUERZAS EN EL SOPORTE DE UNA POLEA</h1>
+                                <p>Una polea es una máquina simple que se utiliza para transmitir y modificar la
+                                    dirección de una fuerza. Además, cuando se combinan en conjuntos como aparejos o
+                                    polipastos, también permiten reducir la magnitud de la fuerza necesaria para
+                                    levantar un peso.</p>
+                                <p>La polea actúa como un punto de apoyo para una cuerda que se enrolla parcialmente
+                                    alrededor de ella. La polea simple se puede entender como una palanca de primer
+                                    grado, en la cual tanto la fuerza (F) como la resistencia (R) se aplican a la misma
+                                    distancia del eje, que coincide con el radio de la polea. En un extremo se encuentra
+                                    la resistencia (R), y en el otro extremo se aplica la fuerza actuante (F) o
+                                    potencia.</p>
+                                <p>Es importante comprender las fuerzas que actúan en el soporte de una polea. Además de
+                                    la fuerza aplicada en el extremo de la cuerda, también existen fuerzas de tensión en
+                                    la cuerda misma y en el soporte de la polea. Estas fuerzas deben ser consideradas
+                                    para garantizar la estabilidad y el funcionamiento adecuado de la polea.</p>
+                                <p>Además, es esencial tener en cuenta que las poleas pueden tener diferentes
+                                    configuraciones, como poleas fijas o móviles, y que cada una puede tener impacto en
+                                    las fuerzas involucradas en el sistema. Por lo tanto, es importante considerar todos
+                                    estos aspectos al analizar las fuerzas en el soporte de una polea.</p>
+                                <h2>Fórmulas Descripción</h2>
+                                <ul>
+                                    <li><strong>W = m * g:</strong> Peso en un objeto, donde m es la masa y g es la
+                                        aceleración debida a la gravedad.</li>
+                                    <li><strong>F = R:</strong> Relación entre la fuerza aplicada y la resistencia en
+                                        una polea simple.</li>
+                                    <li><strong>F = R / n:</strong> Relación entre la fuerza aplicada y la resistencia
+                                        en un sistema de poleas móviles, donde n es el número de segmentos de cuerda.
+                                    </li>
+                                    <li><strong>T = F / n:</strong> Fuerza de tensión en la cuerda conectada a una
+                                        polea, donde T es la fuerza de tensión y n es el número de segmentos de cuerda.
+                                    </li>
+                                    <li><strong>Fg = 𝑇₁² + 𝑇₂² + 𝑇₃² + ... + 𝑇ₙ²:</strong> Relación entre las
+                                        tensiones en una configuración de poleas móviles según la ley de las poleas,
+                                        donde T₁, T₂, T₃, ..., Tₙ son las tensiones en cada segmento de cuerda y F es la
+                                        fuerza aplicada.</li>
+                                </ul>
+                            </section>
+                            <section id="objetivos" class="mb-5">
+                                <h2>Objetivos</h2>
+                                <ul>
+                                    <li>Comprender los principios fundamentales de las poleas y su aplicación en la
+                                        transmisión y modificación de fuerzas.</li>
+                                    <li>Analizar las fuerzas que actúan en el soporte de una polea, considerando tanto
+                                        la fuerza aplicada en el extremo de la cuerda como las fuerzas de tensión en la
+                                        cuerda misma y en el soporte de la polea.</li>
+                                    <li>Aplicar las fórmulas relevantes para calcular y predecir las fuerzas en el
+                                        soporte de una polea. Esto incluye utilizar la fórmula del peso para determinar
+                                        la fuerza gravitacional en un objeto.</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- MÓDULO 2.2 -->
+                    <!-- Equipos / Materiales -->
+                    <!-- EQUIPOS / MATERIALES -->
+                    <section id="submodule2_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-5 overflow-hidden"
+                                        style="width: 10rem;" data-bs-toggle="modal" data-bs-target="#pieEstativoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Pie Estativo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/pie-estativo.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#varillaSoporte600mmModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Varilla Soporte 600mm</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/varilla-soporte-600mm.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#varillaSoporteOrificioModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Varilla Soporte con Orificio
+                                                100mm</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/varilla-soporte-orificio.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#nuezDobleModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Nuez Doble</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/nuez-doble.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row justify-content-center p-3">
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#dinamometro1NModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Dinamómetro 1N</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/dinamometro-1N.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#dinamometro2NModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Dinamómetro 2N</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/dinamometro-2N.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#soporteDinamometrosModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Soporte para Dinamómetros
+                                            </h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/soporte-dinamometros.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#platilloPesasModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Platillo para Pesas de Ranura
+                                                10g</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/platillo-pesas.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row justify-content-center p-3">
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#pesaRanura10gModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Pesa de Ranura 10g</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/pesa-ranura.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#polea40mmModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Polea D= 40mm</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/polea-40mm.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#sedalModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Sedal</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/sedal.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#tijerasModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Tijeras</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/tijeras.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#discoGraduadoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Disco Graduado</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/disco-graduado.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Reactivos, muestras, otros -->
+                    <section id="submodule2_3" class="module">
+                        <div class="container">
+                            <h1>Reactivos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#peroxidoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Peróxido de Hidrógeno 0.5%
+                                            </h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/peroxido-hidrogeno.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#aguaesterilizadaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Agua destilada</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/Agua-destilada.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h1>Muestras / Otros</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#higadoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Hígado de Pollo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/higado-pollo.jpg " alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </section>
+
+                    <!-- Procedimiento / Actividades por realizar -->
+                    <section id="submodule2_4" class="module">
+                        <h1 class="text-center">Procedimiento / Actividades por Desarrollar</h1>
+                        <div class="container mt-5">
+
+                            <h3 class="text-center">Preparación de Experimento con Hígado y Peróxido de Hidrógeno</h3>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>En una caja Petri colocar 30 ml de agua destilada y rotularla como caja Petri A.
+                                    </p>
+                                </div>
+                                <!-- <img src="../img/curso-fisica/procedimiento/caja-petri-agua.jpg"
+                                    class="step-image img-fluid mx-auto d-block" alt="Caja Petri con agua destilada"> -->
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>En otra caja Petri colocar 30 ml de Peróxido de Hidrogeno 0.5% y rotularla como
+                                        caja Petri B.</p>
+                                </div>
+                                <!-- <img src="../img/curso-fisica/procedimiento/caja-petri-peroxido.jpg"
+                                    class="step-image img-fluid mx-auto d-block"
+                                    alt="Caja Petri con Peróxido de Hidrógeno"> -->
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Cortar con un bisturí un pedazo de hígado en forma cuadrada y colocarla dentro de
+                                        las cajas Petri A durante 3 minutos.</p>
+                                </div>
+                                <!-- <img src="../img/curso-fisica/procedimiento/corte-higado.jpg"
+                                    class="step-image img-fluid mx-auto d-block" alt="Corte de hígado"> -->
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Con una pinza, transferir el pedazo de hígado de la caja Petri A a la caja Petri
+                                        B.</p>
+                                </div>
+                                <!-- <img src="../img/curso-fisica/procedimiento/transferencia-higado.jpg"
+                                    class="step-image img-fluid mx-auto d-block" alt="Transferencia de hígado"> -->
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">5</div>
+                                    <p>Observar lo que ocurre.</p>
+                                </div>
+                                <!-- <img src="../img/curso-fisica/procedimiento/observacion.jpg"
+                                    class="step-image img-fluid mx-auto d-block" alt="Observación del experimento"> -->
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">6</div>
+                                    <p>Acerque un cerillo encendido a la caja Petri B.</p>
+                                </div>
+                                <!-- <img src="../img/curso-fisica/procedimiento/cerillo.jpg"
+                                    class="step-image img-fluid mx-auto d-block"
+                                    alt="Acerca de un cerillo encendido a la caja Petri B"> -->
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">7</div>
+                                    <p>Observar lo que ocurre.</p>
+                                </div>
+                                <!-- <img src="../img/curso-fisica/procedimiento/observacion-cerillo.jpg"
+                                    class="step-image img-fluid mx-auto d-block"
+                                    alt="Observación del cerillo en la caja Petri B"> -->
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- quiz 2 -->
+                    <section id="submodule2_5" class="module">
+                        <div class="container container-quiz" id="quizContainer2">
+                            <h1>Quiz 2</h1>
+                            <div id="quiz2"></div>
+                            <button id="nextBtn2" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(2)">Siguiente</button>
+                            <div id="scoreContainer2" class="score-container" style="display: none;">
+                                <p id="score2" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn2" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(2)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 3           -->
+                    <!-- ================================== -->
+
+                    <!-- MÓDULO 1.1 -->
+                    <!-- INTRODUCCIÓN DEL PRIMER LABORATORIO -->
+                    <!-- INTRODUCCIÓN -->
+                    <section id="submodule3_1" class="module">
+                        <div class="container">
+                            <section id="introduccion" class="mb-5">
+                                <h1>TEMA DE LA PRÁCTICA: Extracción ADN casera</h1>
+                                <p>El ADN: es el ácido desoxirribonucleico donde se encuentra la información genética de
+                                    la mayor parte de los seres vivos. El ADN es un producto con una estructura química
+                                    idéntica en todos los seres vivos, pero que contiene la clave de la vida, o sea, los
+                                    genes que nos hacen ser únicos y diferentes.</p>
+                                <p>La extracción de ADN es un proceso importante en la investigación científica y en la
+                                    conservación de especies. Los métodos de extracción de ADN pueden ser comerciales o
+                                    caseros, y la elección del método dependerá de la aplicación y de la calidad y
+                                    cantidad de ADN requerida.</p>
+                                <p>Los métodos de extracción de ADN comerciales suelen ser más eficientes y precisos que
+                                    los métodos caseros, pero los métodos caseros pueden ser útiles para experimentos
+                                    simples y educativos. La calidad y cantidad de ADN obtenido pueden variar según el
+                                    método de extracción utilizado y la muestra biológica empleada.</p>
+                                <p>Los métodos caseros de extracción de ADN, como el uso de detergente y sal o alcohol,
+                                    pueden ser útiles para experimentos simples y educativos, pero pueden no ser tan
+                                    eficientes como los métodos comerciales y pueden producir ADN de menor calidad.</p>
+                                <p>Para aislar el ADN hay que hacer que precipite en alcohol. El ADN es soluble en agua,
+                                    pero cuando se encuentra en alcohol se desenrolla y precipita en la interfase entre
+                                    el alcohol y el agua.</p>
+                            </section>
+
+                            <section id="objetivos" class="mb-5">
+                                <h2>OBJETIVOS</h2>
+                                <ul>
+                                    <li>Realizar la extracción del ADN, mediante la muestra de un plátano.</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- EQUIPOS / MATERIALES -->
+                    <section id="submodule3_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center">
+                            </div>
+
+                            <h1>Materiales e Insumos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#balanzaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Balanza analítica</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/balanza.jpg"
+                                                alt="Balanza analítica">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#guantesModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Guantes de Nitrilo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/guantes.jpg"
+                                                alt="Guantes de Nitrilo">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#papelfiltroModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Papel filtro</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/papel-filtro.jpg"
+                                                alt="Papel filtro">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#probetaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Probeta</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/probeta.jpg" alt="Probeta">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#coladorModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Colador</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/colador.jpg" alt="Colador">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#gasaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Gasa</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/gasa.jpg" alt="Gasa">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#morteroModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Mortero</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/mortero.jpg" alt="Mortero">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#tuboEnsayoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Tubo de ensayo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/tubo-ensayo.jpg"
+                                                alt="Tubo de ensayo">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#bisturiModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Bisturí</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/41Ml-tnNssL._AC_-1-300x300.webp"
+                                                alt="Bisturí">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#pinchoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Pincho</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/pincho.png" alt="Pincho">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- REACTIVOS / MUESTRAS / OTROS -->
+                    <section id="submodule3_3" class="module">
+                        <div class="container">
+                            <h1>Reactivos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#alcoholEticoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Alcohol etílico 96% (500 ml)
+                                            </h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/alcohol-96.jpg"
+                                                alt="Alcohol etílico 96%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#salModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Sal (NaCl)</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/sal.jpg" alt="Sal (NaCl)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#detergenteModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Detergente</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/detergente.jpg" alt="Detergente">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#aguaesterilizadaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Agua destilada</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/Agua-destilada.webp"
+                                                alt="Agua destilada">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1>Muestras / Otros</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#platanoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Plátano</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/platano.jpg" alt="Plátano">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PROCEDIMIENTO -->
+                    <section id="submodule3_4" class="module">
+                        <h1 class="text-center">PROCEDIMIENTO / ACTIVIDADES POR DESARROLLAR</h1>
+                        <div class="container mt-5">
+                            <h3 class="text-center">PREPARACIÓN DE SOLUCIÓN SALINA-JABONOSA</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Con una probeta medir 100 ml de agua destilada y 10 ml de detergente líquido.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Pesar en la balanza analítica 13 g de NaCl (sal).</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Añadir en un vaso de precipitación todos estos componentes y mezclar despacio o
+                                        suave para evitar la formación de espuma con el jabón.</p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-center">PROCEDIMIENTO</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Con un bisturí picar el plátano en rodajas y colocarlo en el mortero.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Triturar la muestra de plátano.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Verter la solución salina-jabonosa y seguir triturando.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>En un colador poner el papel filtro y gasa colocándolo encima de un vaso de
+                                        precipitación.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">5</div>
+                                    <p>Proceder a colar la muestra triturada con la solución salina-jabonosa.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">6</div>
+                                    <p>El líquido filtrado pasarlo a un tubo de ensayo.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">7</div>
+                                    <p>Colocar el alcohol etílico al 96% congelado por las paredes del tubo.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">8</div>
+                                    <p>Dejar reposar unos minutos y observar los resultados (una capa blanca
+                                        gelatinosa).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Quiz Laboratorio 3 -->
+                    <section id="submodule3_5" class="module">
+                        <div class="container container-quiz" id="quizContainer3">
+                            <h1>Quiz 3</h1>
+                            <div id="quiz3"></div>
+                            <button id="nextBtn3" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(3)">Siguiente</button>
+                            <div id="scoreContainer3" class="score-container" style="display: none;">
+                                <p id="score3" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn3" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(3)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 4           -->
+                    <!-- ================================== -->
+
+                    <!-- Introducción -->
+                    <section id="submodule4_1" class="module">
+                        <div class="container">
+                            <section id="introduccion" class="mb-5">
+                                <h1>Tipos sanguíneos </h1>
+                                <p>Los grupos sanguíneos son un sistema de clasificación de la sangre humana basado en
+                                    la presencia o ausencia de ciertos antígenos en la superficie de los glóbulos rojos.
+                                    El sistema ABO es el más conocido y clasifica la sangre en cuatro grupos: A, B, AB y
+                                    O, según la presencia de los antígenos A y B. Además, el factor Rh es otro
+                                    importante grupo sanguíneo que determina si la sangre es Rh positiva o negativa. Los
+                                    grupos sanguíneos se heredan de los padres según ciertas reglas genéticas.</p>
+                                <p>La sangre se clasifica en cuatro grupos principales: A, B, AB y O, según la presencia
+                                    de los antígenos A y B en los glóbulos rojos. Además, el factor Rh determina si la
+                                    sangre es Rh positiva o negativa.</p>
+                                <p>Los tipos sanguíneos son determinados por la presencia de antígenos en la superficie
+                                    de los glóbulos rojos. Existen cuatro tipos principales de sistemas sanguíneos:</p>
+                                <h4>Sistema ABO:</h4>
+                                <p>Este es uno de los sistemas más conocidos y se basa en dos antígenos principales: A y
+                                    B. Los individuos pueden ser tipos A, B o AB (que expresan tanto A como B), mientras
+                                    que los grupos sanguíneos O no expresan ninguno de estos antígenos.</p>
+                                <h4>Sistema Rh:</h4>
+                                <p>Este sistema es más complejo y está relacionado con la presencia de antígenos en la
+                                    superficie de los glóbulos rojos que determinan la compatibilidad entre individuos
+                                    para la transfusión sanguínea.</p>
+                                <p>Los anticuerpos anti-A y anti-B son importantes en la determinación del tipo de
+                                    sangre y en la compatibilidad en transfusiones, mientras que el anticuerpo anti-Rh
+                                    está relacionado con la sensibilización a antígenos Rh positivos, lo que puede
+                                    causar complicaciones en ciertas situaciones médicas. Es decir, los anticuerpos
+                                    anti-A y anti-B se forman en respuesta a antígenos ausentes en la sangre del
+                                    individuo. Por otro lado, el anticuerpo anti-Rh (también llamado anticuerpo anti-D)
+                                    se forma en individuos Rh negativos que son sensibilizados por antígenos Rh
+                                    positivos.</p>
+                            </section>
+
+                            <section id="objetivos" class="mb-5">
+                                <h2>OBJETIVOS</h2>
+                                <ul>
+                                    <li>Entender la clasificación de los grupos sanguíneos según el sistema ABO.</li>
+                                    <li>Comprender la importancia del factor Rh en la clasificación de la sangre.</li>
+                                    <li>Reconocer la formación y función de anticuerpos anti-A, anti-B y anti-Rh.</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- EQUIPOS / MATERIALES -->
+                    <section id="submodule4_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center">
+                                <h1>N/S</h1>
+                            </div>
+
+                            <h1>Materiales e Insumos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#portaobjetosModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Portaobjeto</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/Porta-Objetos-Banda-Mate-MICRO.jpg"
+                                                alt="Portaobjeto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#guantesModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Guantes de Nitrilo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/guantes.jpg"
+                                                alt="Guantes de Nitrilo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#lancetaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Lanceta</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/lanceta1-500x500-min.jpg"
+                                                alt="Lanceta">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#palillosModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Palillos</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/palillos.webp" alt="Palillos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#algodonModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Algodón</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/algodon.jpg" alt="Algodón">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- REACTIVOS / MUESTRAS / OTROS -->
+                    <section id="submodule4_3" class="module">
+                        <div class="container">
+                            <h1>Reactivos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#antiAModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">ANTI A (10 ml)</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/antiA.jpg" alt="ANTI A">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#antiBModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">ANTI B (10 ml)</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/antiB.jpg" alt="ANTI B">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#antiDHRModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">ANTI DHR (10 ml)</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/antiDHR.jpg" alt="ANTI DHR">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#alcoholEticoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Alcohol</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/alcohol-96.jpg" alt="Alcohol">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1>Muestras / Otros</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#sangreModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Sangre</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/sangre-lanzeta.jpg" alt="Sangre">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PROCEDIMIENTO -->
+                    <section id="submodule4_4" class="module">
+                        <h1 class="text-center">PROCEDIMIENTO / ACTIVIDADES POR DESARROLLAR</h1>
+                        <div class="container mt-5">
+                            <h3 class="text-center">PROCEDIMIENTO PARA USO DE ALGODÓN</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Cortar el algodón en pequeñas porciones utilizando tijeras estériles.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Humedecer ligeramente el algodón con una solución salina estéril.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Colocar el algodón humedecido en el área de la muestra para absorber cualquier
+                                        exceso de líquido.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Desechar el algodón usado en un contenedor de residuos biológicos.</p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-center">PROCEDIMIENTO PARA USO DE ANTI A</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Aplicar una gota de reactivo Anti A sobre la muestra de sangre.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Mezclar suavemente la muestra con el reactivo usando una varilla de vidrio
+                                        estéril.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Observar la aglutinación bajo un microscopio.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Registrar los resultados y desechar el material usado adecuadamente.</p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-center">PROCEDIMIENTO PARA USO DE ANTI B</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Aplicar una gota de reactivo Anti B sobre la muestra de sangre.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Mezclar suavemente la muestra con el reactivo usando una varilla de vidrio
+                                        estéril.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Observar la aglutinación bajo un microscopio.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Registrar los resultados y desechar el material usado adecuadamente.</p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-center">PROCEDIMIENTO PARA USO DE ANTI DHR</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Aplicar una gota de reactivo Anti DHR sobre la muestra de sangre.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Mezclar suavemente la muestra con el reactivo usando una varilla de vidrio
+                                        estéril.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Observar la aglutinación bajo un microscopio.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Registrar los resultados y desechar el material usado adecuadamente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Quiz Laboratorio 4 -->
+                    <section id="submodule4_5" class="module">
+                        <div class="container container-quiz" id="quizContainer3">
+                            <h1>Quiz 4</h1>
+                            <div id="quiz4"></div>
+                            <button id="nextBtn4" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(4)">Siguiente</button>
+                            <div id="scoreContainer4" class="score-container" style="display: none;">
+                                <p id="score4" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn4" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(4)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 5           -->
+                    <!-- ================================== -->
+
+                    <!-- Introducción -->
+                    <section id="submodule5_1" class="module">
+                        <div class="container">
+                            <section id="introduccion" class="mb-5">
+                                <h1>Actividad espermática en pajilla de semen bovino</h1>
+                                <p>La actividad espermática en la pajilla de semen bovino es un indicador importante de
+                                    la calidad del semen. Se refiere a la capacidad de los espermatozoides para moverse
+                                    y fertilizar un óvulo. La actividad espermática se puede medir de varias maneras,
+                                    pero la forma más común es mediante un microscopio.</p>
+                                <p>Para medir la actividad espermática, se coloca una muestra de semen en un
+                                    portaobjetos y se observa al microscopio. Los espermatozoides se clasifican en tres
+                                    categorías principales:</p>
+                                <ul>
+                                    <li><strong>Movilidad progresiva:</strong> Los espermatozoides que se mueven de
+                                        forma lineal y constante.</li>
+                                    <li><strong>Movilidad no progresiva:</strong> Los espermatozoides que se mueven de
+                                        forma circular o errática.</li>
+                                    <li><strong>Inmóviles:</strong> Los espermatozoides que no se mueven.</li>
+                                </ul>
+                                <p>La actividad espermática se expresa como un porcentaje de espermatozoides móviles
+                                    progresivos. Un porcentaje de movilidad progresiva de al menos el 50 % se considera
+                                    normal. Un porcentaje de movilidad progresiva inferior al 50 % puede indicar que el
+                                    semen es de baja calidad y que puede tener dificultades para fertilizar un óvulo.
+                                </p>
+                                <p>La actividad espermática puede verse afectada por una serie de factores, incluyendo:
+                                </p>
+                                <ul>
+                                    <li><strong>La edad del toro:</strong> Los toros más jóvenes suelen tener una mayor
+                                        actividad espermática que los toros más viejos.</li>
+                                    <li><strong>La salud del toro:</strong> Los toros que están sanos suelen tener una
+                                        mayor actividad espermática que los toros que están enfermos.</li>
+                                    <li><strong>Las condiciones de almacenamiento del semen:</strong> El semen que se
+                                        almacena adecuadamente suele tener una mayor actividad espermática que el semen
+                                        que se almacena de forma inadecuada.</li>
+                                </ul>
+                                <p>La actividad espermática es un factor importante a tener en cuenta al evaluar la
+                                    calidad del semen bovino.</p>
+                            </section>
+
+                            <section id="objetivos" class="mb-5">
+                                <h2>OBJETIVOS</h2>
+                                <ul>
+                                    <li>Aprender a medir la actividad espermática en pajilla de semen bovino.</li>
+                                    <li>Determinar la calidad del semen bovino en función de la actividad espermática.
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- EQUIPOS / MATERIALES -->
+                    <section id="submodule5_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-5 overflow-hidden"
+                                        style="width: 10rem;" data-bs-toggle="modal" data-bs-target="#microscopioModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Microscopio</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/microscopio.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1>Materiales e Insumos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#portaobjetosModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Portaobjetos</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/Porta-Objetos-Banda-Mate-MICRO.jpg"
+                                                alt="Portaobjetos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#cubreobjetosModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Cubreobjetos</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/cubreobjetos.png"
+                                                alt="Cubreobjetos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Pipeta Pasteur</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/pipeta_pasteur.jpg"
+                                                alt="Pipeta Pasteur">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#aguaesterilizadaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Agua desionizada o destilada
+                                            </h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/Agua-destilada.webp"
+                                                alt="Agua desionizada o destilada">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#guantesModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Guantes</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/guantes.jpg" alt="Guantes">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#mascarillaModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Mascarilla</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/mascarilla.jpg" alt="Mascarilla">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#gafasModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Gafas de seguridad</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/gafas-seguridad.webp"
+                                                alt="Gafas de seguridad">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- REACTIVOS / MUESTRAS / OTROS -->
+                    <section id="submodule5_3" class="module">
+                        <div class="container">
+                            <h1>Reactivos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#medioCultivoModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Medio de cultivo</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/medio-cultivo.jpg"
+                                                alt="Medio de cultivo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1>Muestras / Otros</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal"
+                                        data-bs-target="#pajillaSemenModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Pajilla de semen bovino</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-fisica/materiales/pajilla-lab-bovino.jpg"
+                                                alt="Pajilla de semen bovino">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- NUEVO PROCEDIMIENTO -->
+                    <section id="submodule5_4" class="module">
+                        <h1 class="text-center">PROCEDIMIENTO PARA ANÁLISIS DE SEMEN</h1>
+                        <div class="container mt-5">
+                            <h3 class="text-center">PREPARACIÓN DEL MICROSCOPIO</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Encender el microscopio y ajustar el enfoque para visualizar las células con
+                                        claridad.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Calentar una pipeta Pasteur en agua desionizada o destilada para esterilizarla.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Retirar una pequeña cantidad de semen de la pajilla y colocarla en un
+                                        portaobjetos.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">4</div>
+                                    <p>Colocar el portaobjetos con la muestra en el microscopio y ajustar el enfoque
+                                        para visualizar las células con claridad.</p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-center">ANÁLISIS DE LOS ESPERMATOZOIDES</h3>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Observar los espermatozoides durante un período de 15 minutos.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Clasificar los espermatozoides en tres categorías: Movilidad progresiva,
+                                        Movilidad no progresiva, Inmóviles.</p>
+                                </div>
+                            </div>
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">3</div>
+                                    <p>Para calcular la actividad espermática, contar el número de espermatozoides
+                                        móviles progresivos y dividirlo por el número total de espermatozoides
+                                        observados. Multiplicar el resultado por 100 para expresarlo como un porcentaje.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Quiz Laboratorio 5 -->
+                    <section id="submodule5_5" class="module">
+                        <div class="container container-quiz" id="quizContainer3">
+                            <h1>Quiz 5</h1>
+                            <div id="quiz5"></div>
+                            <button id="nextBtn5" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(5)">Siguiente</button>
+                            <div id="scoreContainer5" class="score-container" style="display: none;">
+                                <p id="score5" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn5" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(5)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
+
                 </div>
+
             </div>
+
         </div>
     </div>
 
@@ -319,7 +2187,7 @@
                         <li><a href="quimica.html">Química</a></li>
                         <li><a href="fisica.html">Física</a></li>
                         <li><a href="matematica.html">Matemática</a></li>
-                        <li><a href="biologia.html">Biología</a></li>
+                        <li><a href="fisica.html">Biología</a></li>
                     </ul>
                 </div>
 
@@ -365,6 +2233,17 @@
     <script src="https://kit.fontawesome.com/91728c998d.js" crossorigin="anonymous"></script>
 
     <script src="../js/quiz-cursos.js"></script>
+    <script src="../js/cuestionarios/fisica-preguntas.js"></script>
+
+    <!-- Agregar modals -->
+    <script>
+        fetch('../materiales-modals/modals-materiales.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            })
+            .catch(error => console.error('Error loading modals:', error));
+    </script>
 </body>
 
 </html>

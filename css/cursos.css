@@ -92,3 +92,9 @@
 .card {
     margin-bottom: 1.5rem;
 }
+
+table,
+th,
+td {
+    border: 1px solid black;
+}

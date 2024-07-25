@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VINCULACIÓN</title>
+    <title>Matemática</title>
 
     <!-- HOJA DE ESTILOS - HOJA PRINCIPAL DE ESTILOS CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
 
     <!-- HOJA DE ESTILOS DE BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,13 +25,19 @@
 
     <link rel="stylesheet" href="../css/quiz-cursos.css">
 
+    <!-- MathJax. Biblioteca JavaScript que permite la visualización de notación matemática en web. -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo.png" alt="" width="50" class="d-inline-block align-text-center">
+            </a>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-vinculacion.png" alt="" width="180" class="d-inline-block align-text-center">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -40,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#">Inicio</a>
+                        <a class="nav-link mx-2" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,20 +56,20 @@
                             Cursos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Química</a></li>
-                            <li><a class="dropdown-item" href="#">Física</a></li>
-                            <li><a class="dropdown-item" href="#">Matemática</a></li>
-                            <li><a class="dropdown-item" href="#">Biología</a></li>
+                            <li><a class="dropdown-item" href="quimica.html">Química</a></li>
+                            <li><a class="dropdown-item" href="fisica.html">Física</a></li>
+                            <li><a class="dropdown-item" href="matematica.html">Matemática</a></li>
+                            <li><a class="dropdown-item" href="fisica.html">Biología</a></li>
                         </ul>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#">Recursos</a>
+                        <a class="nav-link mx-2" href="../pages/recursos.html">Recursos</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#sobre_nosotros">Sobre nosotros</a>
+                        <a class="nav-link mx-2" href="../index.html#sobre_nosotros">Sobre nosotros</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#contacto">Contacto</a>
+                        <a class="nav-link mx-2" href="../index.html#contacto">Contacto</a>
                     </li>
                 </ul>
 
@@ -79,26 +87,129 @@
     <div class="main-container d-flex">
         <div class="sidebar" id="side_nav">
             <ul class="list-unstyled px-3 pt-3">
+                <!-- Botón para ir a la introducción de todo el curso -->
+                <a href="#inicio" class="link-js btn btn-inicio align-items-center rounded"><i
+                        class="fa-solid fa-door-open"></i>&nbsp;Acerca</a>
+                <!-- ================================== -->
+                <!--            PRACTICA N° 1           -->
+                <!-- ================================== -->
                 <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
                         data-bs-target="#home-collapse" aria-expanded="true">
-                        Módulo 1
+                        Práctica N°1
                     </button>
-
-
                     <div class="collapse show" id="home-collapse">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#module1" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-book-open"></i> Lección 1</a></li>
-                            <li><a href="#module2" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-book-open"></i> Lección 2</a></li>
-                            <li><a href="#module3" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-flask-vial"></i> Materiales</a></li>
-                            <li><a href="#module4" class="link-js px-3 text-black text-decoration-none d-block"><i
-                                        class="fa-solid fa-flask-vial"></i> Quiz</a></li>
+                            <li><a href="#submodule1_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule1_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Matariales</a></li>
+                            <!-- <li><a href="#submodule1_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                    class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li> -->
+                            <li><a href="#submodule1_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Actividades</a></li>
+                            <li><a href="#submodule1_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
                         </ul>
                     </div>
                 </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 2           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse2" aria-expanded="false">
+                        Práctica N°2
+                    </button>
+                    <div class="collapse" id="home-collapse2">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule2_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule2_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Matariales</a></li>
+                            <!-- <li><a href="#submodule2_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li> -->
+                            <li><a href="#submodule2_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Actividades</a></li>
+                            <li><a href="#submodule2_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 3           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse3" aria-expanded="false">
+                        Práctica N°3
+                    </button>
+                    <div class="collapse" id="home-collapse3">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule3_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule3_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Matariales</a></li>
+                            <!-- <li><a href="#submodule2_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li> -->
+                            <li><a href="#submodule3_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Actividades</a></li>
+                            <li><a href="#submodule3_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 4           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse4" aria-expanded="false">
+                        Práctica N°4
+                    </button>
+                    <div class="collapse" id="home-collapse4">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule4_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule4_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Matariales</a></li>
+                            <!-- <li><a href="#submodule2_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li> -->
+                            <li><a href="#submodule4_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Actividades</a></li>
+                            <li><a href="#submodule4_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- ================================== -->
+                <!--            PRACTICA N° 5           -->
+                <!-- ================================== -->
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse5" aria-expanded="false">
+                        Práctica N°5
+                    </button>
+                    <div class="collapse" id="home-collapse5">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#submodule5_1" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-book-open"></i> Introducción</a></li>
+                            <li><a href="#submodule5_2" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Matariales</a></li>
+                            <!-- <li><a href="#submodule2_3" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-flask-vial"></i> Reactivos - Muestras</a></li> -->
+                            <li><a href="#submodule5_4" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-check"></i> Actividades</a></li>
+                            <li><a href="#submodule5_5" class="link-js px-3 text-black text-decoration-none d-block"><i
+                                        class="fa-solid fa-clipboard-question"></i> Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+
             </ul>
             <hr class="h-color mx-2">
 
@@ -168,131 +279,854 @@
                     </section>
 
                     <!-- MÓDULOS Y SUBMÓDULOS -->
-
-                    <!-- MÓDULO 1 -->
-                    <section id="module1" class="module">
-                        <h1>Módulo 1</h1>
-                    </section>
-
-                    <!-- MÓDULO 2 -->
-                    <section id="module2" class="module">
-                        <h1>Módulo 2</h1>
-                    </section>
-
-                    <!-- MÓDULO 3 -->
-                    <section id="module3" class="module">
-                        <h1>Materiales</h1>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-3">
-                                <!-- TARJETA EJEMPLO -->
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <!-- TARJETA EJEMPLO -->
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card rounded-10 border-0 shadow-lg cd-40 mx-auto mb-5 overflow-hidden"
-                                    style="width: 15rem;">
-                                    <div class="card-body pt-4">
-                                        <h6 class="card-title fw-semibold">Title</h6>
-                                    </div>
-                                    <div class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                            alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <!-- MÓDULO 4 -->
-                    <section id="module4" class="module">
-                        <!-- <h1>Quiz</h1> -->
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 1           -->
+                    <!-- ================================== -->
+                    <!-- Introducción -->
+                    <section id="submodule1_1" class="module">
                         <div class="container">
-                            <h1>Quiz</h1>
-                            <div id="quiz"></div>
-                            <h3 class="mb-3">Puntaje</h3>
-                            <div id="scoreContainer" class="score-container" style="display: none;">
+                            <section id="introduccion" class="mb-5">
+                                <h1>CREAR Y GRAFICAR FUNCIONES</h1>
 
-                                <p id="score"></p>
-                            </div>
-                            <button id="nextBtn" class="btn btn-primary btn-block disabled"
-                                onclick="nextQuestion()">Siguiente</button>
-                            <button id="restartBtn" class="btn btn-info btn-block" style="display: none;"
-                                onclick="restartQuiz()">Volver a
-                                hacer el Quiz</button>
+                                <h3>Funciones lineales</h3>
+                                <p>Es una función polinómica de primer grado, en una gráfica se representa como una
+                                    línea recta y se escribe: <code>f(x) = mx + b</code>.</p>
+                                <p>Recordemos que los polinomios de primer grado tienen la variable elevada a la primera
+                                    potencia; cuando la potencia es 1, normalmente no se escribe.</p>
+                                <ul>
+                                    <li><code>m</code> = pendiente de la recta (constante).</li>
+                                    <li><code>b</code> = punto de corte de la recta con el eje y (constante).</li>
+                                    <li><code>x</code> = variable.</li>
+                                </ul>
+                                <p>Cuando modificamos <code>m</code> en una función lineal, se modifica la pendiente, es
+                                    decir, la inclinación de la recta; si cambiamos <code>b</code>, la línea se mueve
+                                    hacia arriba o abajo.</p>
+
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab1/Imagen1.png" style="width: 300px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+                                <p>Las funciones se pueden clasificar en tres tipos:</p>
+                                <ul>
+                                    <li>Si el valor de <code>m</code> es mayor a cero, la función es creciente.</li>
+                                    <li>Si el valor de <code>m</code> es menor a cero, la función es decreciente.</li>
+                                    <li>Si <code>m</code> es igual a cero, la función es constante (su gráfica será una
+                                        recta paralela al eje X).</li>
+                                </ul>
+
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab1/Imagen2.png" style="width: 400px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+                                <h3>Ejemplo</h3>
+                                <p>Tenemos la siguiente función: <code>y=1.5x +3</code>.</p>
+                                <p>La pendiente es 1.5; cuando aumentamos <code>x</code> en una unidad, <code>y</code>
+                                    aumenta en 1.5 unidades. <code>b</code> = 3, entonces la recta corta el eje y en el
+                                    punto <code>y = 3</code>.</p>
+                                <p>Para graficar podemos hacer una tabla de valores y graficar cada punto en el plano
+                                    cartesiano.</p>
+
+                                <div class="row align-items-center align-text-center">
+                                    <div class="col-sm-6">
+                                        <img src=" ../img/curso-matematica/lab1/Imagen3.png" style="width: 100px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img src="../img/curso-matematica/lab1/Imagen4.png" style="width: 300px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                </div>
+
+                                <h3>Funciones cuadráticas</h3>
+                                <p>Es una función polinómica de segundo grado que se escribe:
+                                    <code>f(x)=ax^2+bx+c</code> donde <code>a</code>, <code>b</code> y <code>c</code>
+                                    son números reales diferentes a cero.
+                                </p>
+                                <p>Si <code>a>0</code>, el vértice de la parábola estará en la parte inferior; si
+                                    <code>a<0</code>, el vértice estará en la parte superior de la parábola.
+                                </p>
+                                <p>La gráfica de una función cuadrática es una parábola de la cual el eje de simetría es
+                                    paralelo al eje de las <code>y</code>.</p>
+                                <p>Para obtener las raíces de la ecuación seguimos estos pasos:</p>
+                                <ol>
+                                    <li>Igualar la ecuación a cero.</li>
+                                    <li>Factorizar la ecuación.</li>
+                                    <li>Igualar cada factor a cero y obtener las raíces.</li>
+                                </ol>
+                                <p><strong>Nota:</strong></p>
+                                <ul>
+                                    <li>Cuando la parábola se encuentre hacia arriba, es positiva.</li>
+                                    <li>Cuando la parábola se encuentre hacia abajo, es negativa.</li>
+                                </ul>
+
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab1/Imagen5.png" style="width: 400px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+                                <h3>Ejemplo</h3>
+                                <p>Tenemos la siguiente función: <code>y=2x^2-4x-1</code>.</p>
+                                <p>Para graficar podemos hacer una tabla de valores y graficar cada punto en el plano
+                                    cartesiano.</p>
+
+                                <div class="row align-items-center align-text-center">
+                                    <div class="col-sm-6">
+                                        <img src=" ../img/curso-matematica/lab1/Imagen6.png" style="width: 100px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img src="../img/curso-matematica/lab1/Imagen7.png" style="width: 300px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                </div>
+
+                                <h3>Uso de GeoGebra</h3>
+                                <p>GeoGebra es un software matemático dinámico para todos los niveles educativos que
+                                    reúne geometría, álgebra y hojas de cálculo.</p>
+                                <p>Para graficar una función lineal en GeoGebra, siga los siguientes pasos:</p>
+                                <ol>
+                                    <li>Abrir GeoGebra: Abra el software GeoGebra en su computadora o en la aplicación
+                                        en línea <a href="https://www.geogebra.org"
+                                            target="_blank">https://www.geogebra.org</a>.</li>
+                                    <li>Dar clic en el apartado “INICIAR CALCULADORA” para visualizar el espacio de
+                                        trabajo del aplicativo.</li>
+                                    <li>Ofrece varias funcionalidades como:
+                                        <ul>
+                                            <li><strong>Álgebra:</strong> se especifica la función y/o ecuación.</li>
+                                            <li><strong>Herramientas:</strong> contiene las herramientas para mover,
+                                                trazar, eliminar, agregar (puntos, líneas, texto, etc.).</li>
+                                            <li><strong>Tabla:</strong> se especifican los valores para realizar los
+                                                trazos.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Finalmente se encuentra el área del plano cartesiano donde estarán graficadas
+                                        las funciones y sus valores.</li>
+                                </ol>
+
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab1/Imagen8.png" style="width: 400px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+                                <h4>Ejemplo: Graficar la siguiente función lineal y cuadrática.</h4>
+                                <h5>Función Lineal</h5>
+                                <p>Como primer punto, se debe escribir la función en el apartado de “Álgebra” donde se
+                                    encuentra la entrada de escritura.</p>
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab1/Imagen9.png" style="width: 300px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+                                <p>Seguido, se debe escribir la función a graficar, en este caso, <code>y=2x+1</code>.
+                                    Se encuentra la tabla de valores desde -2 a 2; para ello, se da clic en los tres
+                                    puntos y se selecciona “Tabla de Valores”.</p>
+                                <p>Finalmente, se obtiene una gráfica ordenada con su tabla de valores en puntos.</p>
+
+                                <h5>Función Cuadrática</h5>
+                                <p>Como primer punto, se debe escribir la función en el apartado de “Álgebra” donde se
+                                    encuentra la entrada de escritura.</p>
+                                <p>Seguido, se debe escribir la función a graficar, en este caso,
+                                    <code>y=2x^2-4x-1</code>. Se encuentra la tabla de valores desde -2 a 2; para ello,
+                                    se da clic en los tres puntos y se selecciona “Tabla de Valores”.
+                                </p>
+
+                                <div class="row align-items-center align-text-center">
+                                    <div class="col-sm-6">
+                                        <img src=" ../img/curso-matematica/lab1/Imagen10.png" style="width: 300px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img src="../img/curso-matematica/lab1/Imagen11.png" style="width: 200px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                </div>
+                                <p>Finalmente, se obtiene una gráfica ordenada con su tabla de valores en puntos.</p>
+                                <div class="row align-items-center align-text-center">
+                                    <div class="col-sm-6">
+                                        <img src=" ../img/curso-matematica/lab1/Imagen12.png" style="width: 150px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img src="../img/curso-matematica/lab1/Imagen13.png" style="width: 200px;"
+                                            class="img-fluid mx-auto d-block" alt="Responsive image">
+                                    </div>
+                                </div>
+
+                                <p>Cabe destacar que se puede agregar más de una función, por lo tanto, ambas se pueden
+                                    graficar sin ningún problema.</p>
+
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab1/Imagen14.png" style="width: 450px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+
+                                <div id="objetivos" class="mb-5">
+                                    <h2>OBJETIVOS</h2>
+                                    <ul>
+                                        <li>Entender de mejor forma cómo se grafican las funciones lineales y
+                                            cuadráticas.</li>
+                                        <li>Analizar, documentar e interpretar los resultados obtenidos.</li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
                     </section>
-                </div>
 
-            </div>
+                    <!-- Equipos -->
+                    <section id="submodule1_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#pcInternetModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Computador e internet</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-quimica/materiales/computador-internet.jpg"
+                                                alt="Fenolftaleína">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="container p-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-                                class="card-img" alt="...">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </section>
+
+                    <!-- Actividades -->
+                    <section id="submodule1_4" class="module">
+                        <h1 class="text-center">ACTIVIDADES POR DESARROLLAR</h1>
+                        <div class="container mt-5">
+                            <h3 class="text-center">Ejercicios y Preguntas</h3>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Ingresando a la herramienta <a href="https://www.geogebra.org"
+                                            target="_blank">GeoGebra</a>, realice los siguientes ejercicios:</p>
+                                </div>
+
+                                <h4>Ejercicio 1</h4>
+                                <ul>
+                                    <li>Resolver y graficar la siguiente función lineal: <span id="math1">\( f(x) =
+                                            -3x + 2 \)</span></li>
+                                    <li>Ingrese la tabla de valores del <code>-5</code> al <code>5</code></li>
+                                    <li>Determinar qué tipo de pendiente es (creciente, decreciente o constante)
+                                    </li>
+                                </ul>
+
+                                <h4>Ejercicio 2</h4>
+                                <ul>
+                                    <li>Calcular la pendiente de la recta <span id="math2">\( 2y = 4x + 12 \)</span>
+                                        usando la forma <span id="math3">\( y = mx + b \)</span></li>
+                                    <li>Graficar la función</li>
+                                    <li>Determinar qué tipo de pendiente es (creciente, decreciente o constante)
+                                    </li>
+                                </ul>
+
+                                <h4>Ejercicio 3</h4>
+                                <ul>
+                                    <li>Resolver y graficar la siguiente función cuadrática: <span id="math4">\(
+                                            f(x) = -x^2 + 3 \)</span></li>
+                                    <li>Ingrese la tabla de valores del <code>-7</code> al <code>7</code></li>
+                                    <li>Determinar qué tipo de parábola es (positiva o negativa)</li>
+                                </ul>
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Responder las siguientes preguntas:</p>
+                                </div>
+                                <ul>
+                                    <li>¿Cuál de las siguientes pendientes hace que la función sea constante?
+                                        <ul>
+                                            <li><code>m=3</code></li>
+                                            <li><code>m= \frac{3}{5}</code></li>
+                                            <li><code>m=0</code></li>
+                                            <li><code>m=-5</code></li>
+                                        </ul>
+                                    </li>
+                                    <li>Se puede decir que la función lineal es:
+                                        <ul>
+                                            <li>una recta dibujada en el plano cartesiano</li>
+                                            <li>una curva que va hasta el infinito</li>
+                                            <li>una función cuadrática</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <!-- Quiz Laboratorio 1 -->
+                    <section id="submodule1_5" class="module">
+                        <div class="container container-quiz" id="quizContainer1">
+                            <h1>Quiz 1</h1>
+                            <div id="quiz1"></div>
+                            <button id="nextBtn1" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(1)">Siguiente</button>
+                            <div id="scoreContainer1" class="score-container" style="display: none;">
+                                <p id="score1" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn1" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(1)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 2           -->
+                    <!-- ================================== -->
+                    <!-- Introducción -->
+                    <section id="submodule2_1" class="module">
+                        <div class="container">
+                            <section id="introduccion" class="mb-5">
+                                <h1>Ecuaciones e Inecuaciones Exponenciales y Logarítmicas</h1>
+
+                                <h3>Ecuaciones Exponenciales</h3>
+                                <p>Una ecuación exponencial es aquella en la que aparecen exponenciales, es decir,
+                                    potencias cuyos exponentes son expresiones en las que aparece la incógnita, \( x \).
+                                    El método de resolución consiste en conseguir una igualdad de exponenciales con la
+                                    misma base para poder igualar los exponentes. Por ejemplo:</p>
+                                <p>\( 3^{2x} = 3^6 \)</p>
+                                <p>La ecuación anterior se cumple si los exponentes son iguales. Por tanto, en este
+                                    ejemplo el valor que debe tomar \( x \) es 3.</p>
+                                <p>Para conseguir igualdades como la anterior, se tiene que factorizar, expresar los
+                                    números en forma de potencias, aplicar las propiedades de las potencias y escribir
+                                    las raíces como potencias.</p>
+
+                                <h4>Propiedades de las Potencias</h4>
+                                <ul>
+                                    <li>\( a^1 = a \)</li>
+                                    <li>\( a^0 = 1 \) (para \( a \neq 0 \))</li>
+                                    <li>\( a^n \cdot a^m = a^{n+m} \)</li>
+                                    <li>\( \frac{a^n}{a^m} = a^{n-m} \)</li>
+                                    <li>\( (a^n)^m = a^{n \cdot m} \)</li>
+                                    <li>\( (a \cdot b)^n = a^n \cdot b^n \)</li>
+                                    <li>\( a^{-1} = \frac{1}{a} \) (para \( a \neq 0 \))</li>
+                                    <li>\( a^{-n} = \frac{1}{a^n} \) (para \( a \neq 0 \))</li>
+                                    <li>\( (a \cdot b)^{-n} = a^{-n} \cdot b^{-n} \)</li>
+                                </ul>
+
+                                <h3>Inecuaciones Exponenciales</h3>
+                                <p>Es una desigualdad donde la variable se encuentra como exponente de un número o
+                                    letra, y se trabaja con los símbolos de desigualdad.</p>
+
+                                <h4>Caso 1: Cuando \( a > 1 \) </h4>
+                                <p>\( a^{f(x)} > a^{g(x)} \) si y sólo si \( f(x) > g(x) \)</p>
+                                <p>\( a^{f(x)} \ge a^{g(x)} \) si y sólo si \( f(x) \ge g(x) \)</p>
+                                <p>\( a^{f(x)} < a^{g(x)} \) si y sólo si \( f(x) < g(x) \)</p>
+                                        <p>\( a^{f(x)} \le a^{g(x)} \) si y sólo si \( f(x) \le g(x) \)</p>
+
+                                        <h4>Caso 2: Cuando \( 0 < a < 1 \) </h4>
+                                                <p>\( a^{f(x)} > a^{g(x)} \) si y sólo si \( f(x) < g(x) \)</p>
+                                                        <p>\( a^{f(x)} \ge a^{g(x)} \) si y sólo si \( f(x) \le g(x) \)
+                                                        </p>
+                                                        <p>\( a^{f(x)} < a^{g(x)} \) si y sólo si \( f(x)> g(x) \)</p>
+                                                        <p>\( a^{f(x)} \le a^{g(x)} \) si y sólo si \( f(x) \ge g(x) \)
+                                                        </p>
+
+                                                        <h3>Ecuaciones de Logaritmos</h3>
+                                                        <p>Una ecuación logarítmica es una ecuación cuya incógnita (o
+                                                            incógnitas) se encuentra multiplicando o dividiendo a los
+                                                            logaritmos, en sus bases o en el argumento de los logaritmos
+                                                            (dentro de los logaritmos). Por ejemplo:</p>
+                                                        <p>\( \log_2 (2x + 4) = 3 \)</p>
+                                                        <p>Las propiedades que deben cumplir estas ecuaciones son:</p>
+                                                        <ul>
+                                                            <li>\( \log_a b = x \) implica \( a^x = b \)</li>
+                                                            <li>\( \log_a a = 1 \)</li>
+                                                            <li>\( \log_{10} A = \log A \)</li>
+                                                            <li>\( \log (A \cdot B) = \log A + \log B \)</li>
+                                                            <li>\( \log \left(\frac{A}{B}\right) = \log A - \log B \)
+                                                            </li>
+                                                            <li>\( \log A^n = n \cdot \log A \)</li>
+                                                        </ul>
+                                                        <p>Además, es necesario comprobar las soluciones para verificar
+                                                            que no tenemos el logaritmo de un número negativo o de cero,
+                                                            lo cual es muy frecuente cuando tenemos una expresión de
+                                                            segundo grado en el argumento del logaritmo.</p>
+
+                                                        <h3>Inecuaciones Logarítmicas</h3>
+                                                        <p>Este tipo de inecuación se caracteriza por tener al menos una
+                                                            incógnita afectada del operador logarítmico.</p>
+                                                        <p>Casos:</p>
+                                                        <ul>
+                                                            <li>\( \log_b x > \log_b y \) implica \( x > y \), si \( b >
+                                                                1 \)</li>
+                                                            <li>\( \log_b x < \log_b y \) implica \( x < y \), si \( b>
+                                                                    1 \)</li>
+                                                            <li>\( \log_b x > y \) implica \( x > b^y \), si \( b > 1 \)
+                                                            </li>
+                                                            <li>\( \log_b x < y \) implica \( x < b^y \), si \( b> 1 \)
+                                                            </li>
+                                                        </ul>
+
+                                                        <div id="objetivos" class="mb-5">
+                                                            <h2>OBJETIVOS</h2>
+                                                            <ul>
+                                                                <li>Comprender las bases teóricas sobre las ecuaciones e
+                                                                    inecuaciones exponenciales y logarítmicas.</li>
+                                                                <li>Saber cuándo se aplican los diferentes casos de las
+                                                                    inecuaciones exponenciales y logarítmicas.</li>
+                                                                <li>Entender cómo aplicar las propiedades de la potencia
+                                                                    en las ecuaciones exponenciales.</li>
+                                                            </ul>
+                                                        </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- Equipos -->
+                    <section id="submodule2_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#pcInternetModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Computador e internet</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-quimica/materiales/computador-internet.jpg"
+                                                alt="Fenolftaleína">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#calculadoraModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Calculadora</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-matematica/materiales/calculadora.jpg"
+                                                alt="Fenolftaleína">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Actividades -->
+                    <section id="submodule2_4" class="module">
+                        <h1 class="text-center">ACTIVIDADES POR DESARROLLAR</h1>
+                        <div class="container mt-5">
+                            <h3 class="text-center">Ejercicios y Preguntas</h3>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Vamos a resolver el siguiente ejercicio de aplicación sobre las ecuaciones
+                                        exponenciales y se va a graficar en <a href="https://www.geogebra.org"
+                                            target="_blank">GeoGebra</a>. El azúcar se disuelve en el agua, siguiendo la
+                                        fórmula: <span id="math1">\( A(t) = c \cdot e^{-K \cdot t} \)</span>, donde “c”
+                                        y “k” son constantes. A(t) es el azúcar restante o no disuelta. En un recipiente
+                                        en el que inicialmente se colocan 30 Kg de azúcar, esta cantidad se reduce a 10
+                                        kg luego de 4 horas. Trazar la gráfica de azúcar no disuelta en función del
+                                        tiempo.</p>
+                                </div>
+
+                                <h4>Procedimiento</h4>
+                                <ul>
+                                    <li>Primero debemos hallar el valor de las constantes. El primer tiempo es 0 porque
+                                        es cuando colocamos el azúcar en agua, así que empezamos con ese dato.</li>
+                                    <li>Para \( t = 0 \):
+                                        \[
+                                        30 = c \cdot e^{-K \cdot 0}
+                                        \]
+                                        \[
+                                        30 = c \cdot e^0
+                                        \]
+                                        \[
+                                        30 = c \cdot 1
+                                        \]
+                                        \[
+                                        30 = c
+                                        \]
+                                    </li>
+                                    <li>Ya tenemos una constante. Ahora, para el valor de la segunda constante, tomamos
+                                        el segundo valor dado en el problema, que es cuando pasan 4 horas y tenemos 10
+                                        kg de azúcar.</li>
+                                    <li>Para \( t = 4 \):
+                                        \[
+                                        10 = 30 \cdot e^{-K \cdot 4}
+                                        \]
+                                        \[
+                                        \frac{10}{30} = e^{-4K}
+                                        \]
+                                        \[
+                                        \frac{1}{3} = e^{-4K}
+                                        \]
+                                        \[
+                                        \ln \left(\frac{1}{3}\right) = -4K
+                                        \]
+                                        \[
+                                        -1.099 = -4K
+                                        \]
+                                        \[
+                                        K = 0.27475
+                                        \]
+                                    </li>
+                                    <li>Contando con las dos constantes, reemplazamos en la ecuación que nos planteó el
+                                        problema, la cual queda de la siguiente manera:
+                                        \[
+                                        A(t) = 30 \cdot e^{-0.27475 \cdot t}
+                                        \]
+                                    </li>
+                                    <li>Con la ecuación resuelta, realizamos una gráfica para obtener valores y así
+                                        poder graficar. La tabla debe tener la siguiente composición:
+                                        <ul>
+                                            <li>Tiempo: 0, Azúcar: 30, (0; 30)</li>
+                                            <li>Tiempo: 4, Azúcar: 10, (4; 10)</li>
+                                            <li>Tiempo: 10, Azúcar: \( 30 \cdot e^{-0.27475 \cdot 10} = 1.92 \), (10;
+                                                1.92)</li>
+                                            <li>Tiempo: 15, Azúcar: \( 30 \cdot e^{-0.27475 \cdot 15} = 0.49 \), (15;
+                                                0.49)</li>
+                                            <li>Tiempo: 20, Azúcar: \( 30 \cdot e^{-0.27475 \cdot 20} = 0.12 \), (20;
+                                                0.12)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Para graficar la función, ingrese a la página <a
+                                            href="https://www.geogebra.org/graphing?lang=es"
+                                            target="_blank">GeoGebra</a> y observe la interfaz. Ingrese la función en la
+                                        opción "entrada" y use el teclado matemático que facilita la página. Luego,
+                                        ingrese las coordenadas obtenidas de la función y cambie el color de los puntos
+                                        si lo desea.</li>
+                                </ul>
+                            </div>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">2</div>
+                                    <p>Realizar los siguientes ejercicios sobre ecuaciones exponenciales y logarítmicas:
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li>Resolver: <span id="math2">\( 3^x = 27 \)</span></li>
+                                    <li>Resolver: <span id="math3">\( 2^x + 2 = 16 \)</span></li>
+                                    <li>Resolver: <span id="math4">\( 6^x + 1 = 2^x \)</span></li>
+                                    <li>Resolver: <span id="math5">\( 3^x + 1 = 9^x \)</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Quiz Laboratorio 2 -->
+                    <section id="submodule2_5" class="module">
+                        <div class="container container-quiz" id="quizContainer2">
+                            <h1>Quiz 2</h1>
+                            <div id="quiz2"></div>
+                            <button id="nextBtn2" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(2)">Siguiente</button>
+                            <div id="scoreContainer2" class="score-container" style="display: none;">
+                                <p id="score2" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn2" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(2)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
+                    <!-- ================================== -->
+                    <!--            PRACTICA N° 3           -->
+                    <!-- ================================== -->
+                    <!-- Introducción -->
+                    <section id="submodule3_1" class="module">
+                        <div class="container">
+                            <section id="introduccion" class="mb-5">
+                                <h1>Funciones Exponenciales y Logarítmicas</h1>
+
+                                <h3>Funciones Exponenciales</h3>
+                                <p>La función exponencial es aquella que a cada valor real \( x \) le asigna la potencia
+                                    \( a^x \) con \( a > 0 \) y \( a \neq 1 \). Esta función se expresa comprendiendo
+                                    que el número \( a \) se denomina base.</p>
+                                <p>\( f(x) = a^x \)</p>
+                                <p>Su gráfica es de la siguiente manera:</p>
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab3/Imagen1.png" style="width: 300px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+                                <p>Características:</p>
+                                <ul>
+                                    <li>Dominio: El dominio son todos los números reales.</li>
+                                    <li>Recorrido: El recorrido son todos los números reales positivos.</li>
+                                    <li>Todas las funciones exponenciales son continuas.</li>
+                                    <li>Todas son también cóncavas.</li>
+                                    <li>Si \( a \) es mayor que 1 (\( a > 1 \)), la función es creciente. En cambio, si
+                                        \( a \) es menor que 1 (\( a < 1 \)), la función es decreciente.</li>
+                                    <li>La función exponencial es inyectiva.</li>
+                                </ul>
+                                <p>Propiedades:</p>
+                                <ul>
+                                    <li>\( a^0 = 1 \)</li>
+                                    <li>\( a^1 = a \)</li>
+                                    <li>\( a^{-x} = \frac{1}{a^x} \)</li>
+                                    <li>\( a^x \cdot a^y = a^{x+y} \)</li>
+                                    <li>\( \frac{a^x}{a^y} = a^{x-y} \)</li>
+                                    <li>\( (a^x)^y = a^{x \cdot y} \)</li>
+                                    <li>\( (a \cdot b)^x = a^x \cdot b^x \)</li>
+                                    <li>\( \left(\frac{a}{b}\right)^x = \frac{a^x}{b^x} \)</li>
+                                    <li>\( a^{\frac{x}{y}} = \sqrt[y]{a^x} \)</li>
+                                </ul>
+
+                                <h3>Funciones Logarítmicas</h3>
+                                <p>La función logarítmica es aquella que está formada por un logaritmo de base \( a \),
+                                    siendo \( a \) un real positivo (\( a > 0 \)) y diferente de 1 (\( a \neq 1 \)).</p>
+                                <p>Cuando \( 0 < a < 1 \), entonces la función logarítmica es una función decreciente y
+                                        cuando \( a> 1 \), entonces es una función creciente. Se expresa de la forma:
+                                </p>
+                                <p>\( f(x) = \log_a(x) \)</p>
+                                <p>Características:</p>
+                                <ul>
+                                    <li>Recorrido: El recorrido son todos los números reales.</li>
+                                    <li>Dominio: El dominio son todos los números reales positivos.</li>
+                                    <li>Todas las funciones logarítmicas son continuas.</li>
+                                    <li>Todas son también inyectivas.</li>
+                                    <li>Es creciente si \( a > 1 \).</li>
+                                    <li>Es decreciente si \( 0 < a < 1 \).</li>
+                                    <li>En su expresión simple, siempre pasan por los puntos \( (1, 0) \) y \( (a, 1)
+                                        \).</li>
+                                </ul>
+                                <p>Su gráfica es de la siguiente manera:</p>
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab3/Imagen2.png" style="width: 300px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+                                <p>Propiedades:</p>
+                                <ul>
+                                    <li>Función logarítmica del producto: \( \log_a(x \cdot y) = \log_a(x) + \log_a(y)
+                                        \)</li>
+                                    <li>Función logarítmica de la división: \( \log_a\left(\frac{x}{y}\right) =
+                                        \log_a(x) - \log_a(y) \)</li>
+                                    <li>Función logarítmica del inverso multiplicativo: \(
+                                        \log_a\left(\frac{1}{x}\right) = -\log_a(x) \)</li>
+                                    <li>Función logarítmica de la potencia: \( \log_a(x^y) = y \cdot \log_a(x) \)</li>
+                                    <li>Función logarítmica de la raíz: \( \log_a\left(\sqrt[y]{x}\right) = \frac{1}{y}
+                                        \cdot \log_a(x) \)</li>
+                                    <li>Cambio de base: \( \log_a(x) = \frac{\log_b(x)}{\log_b(a)} \)</li>
+                                </ul>
+
+                                <p> Teniendo en cuenta la función logarítmica, esta se considera como la inversa de la
+                                    función logarítmica.</p>
+                                <div class="container text-center">
+                                    <img src="../img/curso-matematica/lab3/Imagen3.png" style="width: 300px;"
+                                        class="img-fluid mx-auto d-block" alt="Responsive image">
+                                </div>
+
+                                <div id="objetivos" class="mb-5">
+                                    <h2>OBJETIVOS</h2>
+                                    <ul>
+                                        <li>Comprender las bases teóricas sobre las funciones exponenciales y
+                                            logarítmicas.</li>
+                                        <li>Aprender a graficar funciones exponenciales y logarítmicas.</li>
+                                        <li>Entender cómo aplicar las propiedades de las funciones exponenciales y
+                                            logarítmicas para la resolución de ejercicios.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- Equipos -->
+                    <section id="submodule3_2" class="module">
+                        <div class="container">
+                            <h1>Equipos</h1>
+                            <div class="row justify-content-center p-3">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#pcInternetModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Computador e internet</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-quimica/materiales/computador-internet.jpg"
+                                                alt="Fenolftaleína">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="card rounded-10 border-0 shadow cd-40 mx-auto mb-1 overflow-hidden"
+                                        style="width: 11rem;" data-bs-toggle="modal" data-bs-target="#calculadoraModal">
+                                        <div class="card-body pt-3" style="padding: 0.5rem;">
+                                            <h6 class="card-title fw-semibold text-center">Calculadora</h6>
+                                        </div>
+                                        <div
+                                            class="card-head d-flex flex-md-row align-items-center p-0 overflow-hidden">
+                                            <img src="../img/curso-matematica/materiales/calculadora.jpg"
+                                                alt="Fenolftaleína">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Actividades -->
+                    <section id="submodule3_4" class="module">
+                        <h1 class="text-center">ACTIVIDADES POR DESARROLLAR</h1>
+                        <div class="container mt-5">
+                            <h3 class="text-center">Ejercicios y Preguntas</h3>
+
+                            <div class="procedure-step">
+                                <div class="step-content">
+                                    <div class="step-number">1</div>
+                                    <p>Resuelva la siguiente función exponencial \( y = 3^{1 - x} - 1 \) y gráfique en
+                                        <a href="https://www.geogebra.org/graphing?lang=es"
+                                            target="_blank">GeoGebra</a>.
+                                    </p>
+                                </div>
+
+                                <h4>Parte a</h4>
+                                <p>Para resolver el ejercicio propuesto, realice una tabla con valores para \( x \) para
+                                    encontrar \( y \) y así obtener la gráfica:</p>
+
+                                <!-- Tabla de valores de x -->
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>x</th>
+                                            <th>y</th>
+                                            <th>(x; y)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>-2</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>-1</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Parte b</h4>
+                                <p>Con los valores en \( x \) podemos reemplazar en la función planteada para encontrar
+                                    los valores de \( y \):</p>
+
+                                <!-- Tabla de valores calculados -->
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                            <th border="1">x</th>
+                                            <th>y</th>
+                                            <th>(x; y)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>-2</td>
+                                            <td>\( 3^{1 - (-2)} - 1 = 3^3 - 1 = 27 - 1 = 26 \)</td>
+                                            <td>(-2 ; 26)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-1</td>
+                                            <td>\( 3^{1 - (-1)} - 1 = 3^2 - 1 = 9 - 1 = 8 \)</td>
+                                            <td>(-1 ; 8)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>\( 3^{1 - 0} - 1 = 3^1 - 1 = 3 - 1 = 2 \)</td>
+                                            <td>(0 ; 2)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>\( 3^{1 - 1} - 1 = 3^0 - 1 = 1 - 1 = 0 \)</td>
+                                            <td>(1 ; 0)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>\( 3^{1 - 2} - 1 = 3^{-1} - 1 = \frac{1}{3} - 1 = -\frac{2}{3} \)</td>
+                                            <td>(2 ; -2/3)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h4>Parte c</h4>
+                                <p>Para graficar la función, siga estos pasos en GeoGebra:</p>
+                                <ul>
+                                    <li>Ingrese a la página de <a href="https://www.geogebra.org/graphing?lang=es"
+                                            target="_blank">GeoGebra</a>.</li>
+                                    <li>En la opción “entrada”, use el teclado matemático de la página para ingresar la
+                                        función \( y = 3^{1 - x} - 1 \).</li>
+                                    <li>Observe cómo se grafica la función.</li>
+                                    <li>Ingrese las coordenadas obtenidas de la tabla para representar los puntos en la
+                                        gráfica.</li>
+                                    <li>Para cambiar el color de los puntos, haga clic derecho sobre ellos, seleccione
+                                        "propiedades", y ajuste el color según su preferencia.</li>
+                                    <li>Verifique que los puntos coincidan con la gráfica de la función exponencial.
+                                    </li>
+                                </ul>
+
+                                <h4>Parte d</h4>
+                                <p>Grafique las siguientes ecuaciones exponenciales:</p>
+                                <ul>
+                                    <li>\( f(x) = 2^{x + 1} \)</li>
+                                    <li>\( f(x) = \left(\frac{1}{3}\right)^{x} \)</li>
+                                </ul>
+
+                                <h4>Parte e</h4>
+                                <p>Resuelva las siguientes funciones logarítmicas y grafique el segundo ejercicio:</p>
+                                <ul>
+                                    <li>\( f(x) = \log(4 - x) \)</li>
+                                    <li>\( f(x) = \log_{2}(x + 2) \)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Quiz Laboratorio 3 -->
+                    <section id="submodule3_5" class="module">
+                        <div class="container container-quiz" id="quizContainer3">
+                            <h1>Quiz 3</h1>
+                            <div id="quiz3"></div>
+                            <button id="nextBtn3" class="btn btn-primary btn-block disabled"
+                                onclick="nextQuestion(3)">Siguiente</button>
+                            <div id="scoreContainer3" class="score-container" style="display: none;">
+                                <p id="score3" class="score"></p>
+                            </div>
+                            <br>
+                            <button id="restartBtn3" class="btn btn-primary btn-block" style="display: none;"
+                                onclick="restartQuiz(3)">Volver a hacer el Quiz</button>
+                        </div>
+                    </section>
+
                 </div>
+
             </div>
+
         </div>
     </div>
+
 
     <footer class="w-100 py-4 flex-shrink-0">
         <div class="container py-4">
@@ -365,6 +1199,17 @@
     <script src="https://kit.fontawesome.com/91728c998d.js" crossorigin="anonymous"></script>
 
     <script src="../js/quiz-cursos.js"></script>
+    <script src="../js/cuestionarios/matematica-preguntas.js"></script>
+
+    <!-- Agregar modals -->
+    <script>
+        fetch('../materiales-modals/modals-materiales.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            })
+            .catch(error => console.error('Error loading modals:', error));
+    </script>
 </body>
 
 </html>
