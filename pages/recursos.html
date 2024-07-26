@@ -4,10 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VINCULACIÓN</title>
+    <title>Recursos</title>
 
     <!-- HOJA DE ESTILOS - HOJA PRINCIPAL DE ESTILOS CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="../css/styles_recursos.css">
+
+    <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
 
     <!-- HOJA DE ESTILOS DE BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,8 +26,11 @@
     <!-- NAVBAR PRINCIPAL DE LA PÁGINA -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/img/logo.png" alt="" width="50" class="d-inline-block align-text-center">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="" width="50" class="d-inline-block align-text-center">
+            </a>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-vinculacion.png" alt="" width="180" class="d-inline-block align-text-center">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#">Inicio</a>
+                        <a class="nav-link mx-2" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -42,26 +49,178 @@
                             Cursos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Química</a></li>
-                            <li><a class="dropdown-item" href="#">Física</a></li>
-                            <li><a class="dropdown-item" href="#">Matemática</a></li>
-                            <li><a class="dropdown-item" href="#">Biología</a></li>
+                            <li><a class="dropdown-item" href="../cursos/quimica.html">Química</a></li>
+                            <li><a class="dropdown-item" href="../cursos/fisica.html">Física</a></li>
+                            <li><a class="dropdown-item" href="../cursos/matematica.html">Matemática</a></li>
+                            <li><a class="dropdown-item" href="../cursos/biologia.html">Biología</a></li>
                         </ul>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#">Recursos</a>
+                        <a class="nav-link mx-2" href="../pages/recursos.html">Recursos</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#sobre_nosotros">Sobre nosotros</a>
+                        <a class="nav-link mx-2" href="../index.html#sobre_nosotros">Sobre nosotros</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link mx-2" href="#contacto">Contacto</a>
+                        <a class="nav-link mx-2" href="../index.html#contacto">Contacto</a>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
+
+    <div class="container py-4">
+        <!-- Images Filter Buttons Section -->
+        <div class="row" id="filter-buttons">
+            <div class="col-12">
+                <button class="btn mb-2 me-1 active" data-filter="all">Mostrar todos</button>
+                <button class="btn mb-2 mx-1" data-filter="fisica">Física</button>
+                <button class="btn mb-2 mx-1" data-filter="quimica">Química</button>
+                <button class="btn mb-2 mx-1" data-filter="matematica">Matemática</button>
+                <button class="btn mb-2 mx-1" data-filter="biologia">Biología</button>
+            </div>
+        </div>
+
+        <!-- Filterable Images / Cards Section -->
+        <div class="row px-1 mt-4 gap-3" id="filterable-cards">
+            <!-- Física -->
+            <div class="card p-0" data-name="fisica">
+                <a href="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html"
+                    target="_blank">
+                    <img src="../img/recursos/movimiento-proyectiles.png" alt="Física Lab 1" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Movimiento de Proyectiles</h6>
+                    <p class="card-text">Simulación sobre el movimiento de proyectiles.</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="fisica">
+                <a href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html"
+                    target="_blank">
+                    <img src="../img/recursos/fuerza-movimiento.png" alt="Física Lab 2" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Fuerzas y Movimiento</h6>
+                    <p class="card-text">Explora las leyes de Newton.</p>
+                </div>
+            </div>
+            <!-- Química -->
+            <div class="card p-0" data-name="quimica">
+                <a href="https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations_en.html"
+                    target="_blank">
+                    <img src="../img/recursos/equilibrio-quimica.png" alt="Química Lab 1" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Equilibrio Químico</h6>
+                    <p class="card-text">Aprende a balancear ecuaciones químicas.</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="quimica">
+                <a href="https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_en.html" target="_blank">
+                    <img src="../img/recursos/ph-quimica.png" alt="Química Lab 2" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Escala de pH</h6>
+                    <p class="card-text">Experimenta con diferentes soluciones.</p>
+                </div>
+            </div>
+            <!-- Matemática -->
+            <div class="card p-0" data-name="matematica">
+                <a href="https://www.geogebra.org/m/uekabrxt" target="_blank">
+                    <img src="../img/recursos/mate-triangulo-geo.png" alt="Matemática Lab 1" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Geometría: Triángulos</h6>
+                    <p class="card-text">Explora las propiedades de los triángulos.</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="matematica">
+                <a href="https://www.geogebra.org/m/UUpQCSwc" target="_blank">
+                    <img src="../img/recursos/mate-funciones-geo.png" alt="Matemática Lab 2" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Funciones Cuadráticas</h6>
+                    <p class="card-text">Estudia las gráficas de funciones cuadráticas.</p>
+                </div>
+            </div>
+            <!-- Biología -->
+            <div class="card p-0" data-name="biologia">
+                <a href="https://phet.colorado.edu/sims/html/gene-expression-essentials/latest/gene-expression-essentials_en.html"
+                    target="_blank">
+                    <img src="../img/recursos/expresion-genia.png" alt="Biología Lab 1" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Expresión Génica</h6>
+                    <p class="card-text">Simulación sobre la expresión génica.</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="biologia">
+                <a href="https://phet.colorado.edu/sims/html/natural-selection/latest/natural-selection_en.html"
+                    target="_blank">
+                    <img src="../img/recursos/selec-natural.png" alt="Biología Lab 2" />
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title">Selección Natural</h6>
+                    <p class="card-text">Entiende cómo funciona la selección natural.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <!-- <h6>About</h6> -->
+                    <img src="../img/footer_espe_logo.png" alt="" width="250" class="d-inline-block align-text-center">
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <ul class="social-icons">
+                        <li><a href="" class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                        <!-- <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                        <!-- <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Cursos</h6>
+                    <ul class="footer-links">
+                        <li><a href="quimica.html">Química</a></li>
+                        <li><a href="fisica.html">Física</a></li>
+                        <li><a href="matematica.html">Matemática</a></li>
+                        <li><a href="biologia.html">Biología</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Link</h6>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../index.html#cursos">Cursos</a></li>
+                        <li><a href="../pages/recursos.html">Recursos</a></li>
+                        <li><a href="../index.html#sobre_nosotros">Sobre Nosotros</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+                        <a href="#">...</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- jQuery: Biblioteca de JavaScript que simplifica la manipulación del DOM y manejo de eventos. -->
@@ -80,6 +239,8 @@
 
     <!-- AOS: Librería para animaciones al hacer scroll. -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="../js/script-recursos.js"></script>
 
     <!-- Inicialización de AOS: Inicia la librería AOS para que aplique las animaciones configuradas. -->
     <script>
