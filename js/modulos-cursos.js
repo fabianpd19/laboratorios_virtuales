@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modules = document.querySelectorAll(".module");
 
   // Muestra el módulo predeterminado al cargar la página
-  const defaultModule = document.getElementById("submodule3_4");
+  const defaultModule = document.getElementById("inicio");
   defaultModule.style.display = "block";
   defaultModule.style.opacity = "1";
 
