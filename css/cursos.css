@@ -65,6 +65,22 @@
     /* Evita que el círculo se reduzca */
 }
 
+.step-number-non {
+    background-color: #ffffff;
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: bold;
+    flex-shrink: 0;
+    /* Evita que el círculo se reduzca */
+}
+
 .procedure-step {
     margin-bottom: 20px;
 }
