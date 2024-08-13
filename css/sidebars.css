@@ -181,6 +181,7 @@ hr.h-color {
 
 .module {
   display: none;
+  min-height: 130vh;
 }
 
 .module:first-of-type {
