@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const moduleLinks = document.querySelectorAll(".link-js");
-  const modules = document.querySelectorAll(".module");
 
   // Muestra el módulo predeterminado al cargar la página
   const defaultModule = document.getElementById("inicio");
@@ -12,22 +11,49 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       const targetId = link.getAttribute("href").substring(1);
 
-      // Oculta todos los módulos excepto el objetivo
-      modules.forEach(function (module) {
-        if (module.id !== targetId) {
-          module.style.opacity = "0"; // Oculta el módulo
-          module.style.display = "none"; // Oculta el módulo
+      // Oculta todos los módulos y detiene cualquier video
+      document.querySelectorAll(".module").forEach((module) => {
+        if (module.style.display !== "none") {
+          stopAllVideos(module);
+          module.style.display = "none";
+          module.style.opacity = "0";
         }
       });
 
-      // Muestra el módulo objetivo con animación
-      const targetModule = document.getElementById(targetId);
-      targetModule.style.display = "block"; // Muestra el módulo objetivo
-
-      // Espera un corto período antes de aplicar la clase de animación
-      setTimeout(function () {
-        targetModule.style.opacity = "1"; // Aplica la animación de desvanecimiento
-      }, 50); // Ajusta el tiempo según sea necesario
+      // Verifica si el módulo ya se ha cargado
+      let targetModule = document.getElementById(targetId);
+      if (!targetModule) {
+        // Carga el módulo si no existe
+        fetch(`${targetId}.html`)
+          .then((response) => response.text())
+          .then((html) => {
+            const div = document.createElement("div");
+            div.id = targetId;
+            div.className = "module";
+            div.innerHTML = html;
+            document.getElementById("modulos").appendChild(div);
+            targetModule = div;
+            showModule(targetModule);
+          });
+      } else {
+        showModule(targetModule);
+      }
     });
   });
+
+  function showModule(module) {
+    module.style.display = "block";
+    setTimeout(function () {
+      module.style.opacity = "1";
+    }, 50);
+  }
+
+  function stopAllVideos(module) {
+    const iframes = module.querySelectorAll("iframe");
+    iframes.forEach((iframe) => {
+      const src = iframe.src;
+      iframe.src = ""; // Vacia el src para detener el video
+      iframe.src = src; // Restablece el src para reiniciar el video si es necesario
+    });
+  }
 });
