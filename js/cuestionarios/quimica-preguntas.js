@@ -16,12 +16,12 @@ const practica1_quimica = [
   {
     question: "Entre los elementos de protección personal están:",
     options: [
-      { type: "text", value: "a) Todas son correctas" },
-      { type: "text", value: "b) Guantes" },
+      { type: "text", value: "a) Guantes" },
+      { type: "text", value: "b) Todas son correctas" },
       { type: "text", value: "c) Delantal" },
       { type: "text", value: "d) Gafas" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -40,15 +40,15 @@ const practica1_quimica = [
   {
     question: "El uso de equipos de protección de seguridad es:",
     options: [
-      { type: "text", value: "a) Obligatorio" },
+      { type: "text", value: "a) Innecesario" },
       { type: "text", value: "b) Opcional" },
-      { type: "text", value: "c) Innecesario" },
+      { type: "text", value: "c) Obligatorio" },
       {
         type: "text",
         value: "d) Recomendado solo para experimentos peligrosos",
       },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question:
@@ -63,26 +63,29 @@ const practica1_quimica = [
     question:
       "Complete la frase: Es responsabilidad de todos adoptar un comportamiento _______ en el laboratorio.",
     options: [
-      { type: "text", value: "a) adecuado" },
+      { type: "text", value: "a) competitivo" },
       { type: "text", value: "b) relajado" },
       { type: "text", value: "c) individual" },
-      { type: "text", value: "d) competitivo" },
+      { type: "text", value: "d) adecuado" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question: "La hoja de seguridad para una sustancia química describe:",
     options: [
       {
         type: "text",
-        value:
-          "a) su peligrosidad y las precauciones que se deben tomar para evitar algún daño.",
+        value: "a) la cantidad de sustancia química",
       },
       { type: "text", value: "b) su peso molecular" },
-      { type: "text", value: "c) la cantidad de sustancia química" },
+      {
+        type: "text",
+        value:
+          "c) su peligrosidad y las precauciones que se deben tomar para evitar algún daño",
+      },
       { type: "text", value: "d) sus características físicas" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question:
@@ -102,23 +105,23 @@ const practica2_quimica = [
     question:
       "¿Cuál es el material más utilizado en los instrumentos de laboratorio químico?",
     options: [
-      { type: "text", value: "a) Vidrio" },
+      { type: "text", value: "a) Porcelana" },
       { type: "text", value: "b) Plástico" },
       { type: "text", value: "c) Metal" },
-      { type: "text", value: "d) Porcelana" },
+      { type: "text", value: "d) Vidrio" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
       "¿Qué característica del vidrio lo hace preferible en muchos instrumentos de laboratorio?",
     options: [
-      { type: "text", value: "a) Reacción mínima con reactivos" },
+      { type: "text", value: "a) Bajo costo" },
       { type: "text", value: "b) Durabilidad extrema" },
-      { type: "text", value: "c) Bajo costo" },
+      { type: "text", value: "c) Reacción mínima con reactivos" },
       { type: "text", value: "d) Flexibilidad" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question: "Algunos instrumentos para medir volúmenes líquidos son:",
@@ -137,25 +140,27 @@ const practica2_quimica = [
     question:
       "Complete la frase: El vidrio es preferido en muchos instrumentos por su facilidad de _______, _______ y _______.",
     options: [
-      { type: "text", value: "a) limpiar, esterilizar, reutilizar" },
+      { type: "text", value: "a) calentar, enfriar, presurizar" },
       { type: "text", value: "b) romper, fundir, moldear" },
       { type: "text", value: "c) colorear, rayar, pulir" },
-      { type: "text", value: "d) calentar, enfriar, presurizar" },
+      { type: "text", value: "d) limpiar, esterilizar, reutilizar" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
-    question: "Elegir la respuesta según corresponda:",
+    question:
+      "¿Cuál de los siguientes términos es el nombre correcto de un instrumento de laboratorio utilizado para medir o transferir volúmenes pequeños de líquido?",
     options: [
       { type: "text", value: "a) Piseta" },
       { type: "text", value: "b) Pipeta" },
       { type: "text", value: "c) Cuentagotas" },
       { type: "text", value: "d) Ninguna de las anteriores" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
-    question: "Elegir la respuesta según corresponda:",
+    question:
+      "¿Cuál es la correcta secuencia de nombres para los siguientes matraces utilizados en el laboratorio?",
     options: [
       {
         type: "text",
@@ -171,7 +176,7 @@ const practica2_quimica = [
       },
       { type: "text", value: "d) Ninguna de las anteriores" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
 ];
 
@@ -179,23 +184,23 @@ const practica3_quimica = [
   {
     question: "¿Cuál es la unidad más común para expresar la densidad?",
     options: [
-      { type: "text", value: "a) g/ml" },
+      { type: "text", value: "a) lb/ft³" },
       { type: "text", value: "b) kg/cm³" },
-      { type: "text", value: "c) lb/ft³" },
+      { type: "text", value: "c) g/ml" },
       { type: "text", value: "d) g/L" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question:
       "¿Qué principio se aplica para calcular la densidad de sólidos irregulares?",
     options: [
-      { type: "text", value: "a) Principio de Arquímedes" },
+      { type: "text", value: "a) Principio de Pascal" },
       { type: "text", value: "b) Ley de Boyle" },
       { type: "text", value: "c) Ley de Charles" },
-      { type: "text", value: "d) Principio de Pascal" },
+      { type: "text", value: "d) Principio de Arquímedes" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question: "La densidad se define como la masa por unidad de volumen.",
@@ -221,10 +226,10 @@ const practica3_quimica = [
   {
     question: "La densidad, solo se puede calcular si se trata de líquidos",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
 ];
 
@@ -233,23 +238,23 @@ const practica4_quimica = [
     question:
       "¿Qué tipo de mezcla se caracteriza por no poder distinguir sus componentes?",
     options: [
-      { type: "text", value: "a) Homogénea" },
-      { type: "text", value: "b) Heterogénea" },
+      { type: "text", value: "a) Heterogénea" },
+      { type: "text", value: "b) Homogénea" },
       { type: "text", value: "c) Coloide" },
       { type: "text", value: "d) Suspensión" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
       "¿Cuál método de separación se utiliza para mezclas líquido-líquido en esta práctica?",
     options: [
-      { type: "text", value: "a) Decantación" },
+      { type: "text", value: "a) Destilación" },
       { type: "text", value: "b) Filtración" },
-      { type: "text", value: "c) Destilación" },
+      { type: "text", value: "c) Decantación" },
       { type: "text", value: "d) Evaporación" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question:
@@ -264,10 +269,10 @@ const practica4_quimica = [
     question:
       "La destilación separa componentes basándose en sus diferentes puntos de fusión.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -284,12 +289,12 @@ const practica4_quimica = [
     question:
       "Complete la frase: El proceso de _______ consiste en retener partículas sólidas por medio de una barrera.",
     options: [
-      { type: "text", value: "a) filtración" },
+      { type: "text", value: "a) destilación" },
       { type: "text", value: "b) decantación" },
       { type: "text", value: "c) evaporación" },
-      { type: "text", value: "d) destilación" },
+      { type: "text", value: "d) filtración" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
@@ -319,13 +324,16 @@ const practica5_quimica = [
     options: [
       {
         type: "text",
-        value: "a) La capacidad de una sustancia para disolverse en otra",
+        value: "a) La capacidad de un sólido para fundirse",
       },
       { type: "text", value: "b) La capacidad de un líquido para evaporarse" },
-      { type: "text", value: "c) La capacidad de un sólido para fundirse" },
+      {
+        type: "text",
+        value: "c) La capacidad de una sustancia para disolverse en otra",
+      },
       { type: "text", value: "d) La capacidad de un gas para condensarse" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question: "¿Qué es una solución sobresaturada?",
@@ -351,10 +359,10 @@ const practica5_quimica = [
   {
     question: "La solubilidad solo puede expresarse en moles por litro.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -369,23 +377,23 @@ const practica5_quimica = [
     question:
       "Complete la frase: En una solución sobresaturada, el solvente ha disuelto ________ soluto del que puede disolver en el equilibrio de saturación.",
     options: [
-      { type: "text", value: "a) más" },
-      { type: "text", value: "b) menos" },
+      { type: "text", value: "a) menos" },
+      { type: "text", value: "b) más" },
       { type: "text", value: "c) igual" },
       { type: "text", value: "d) ningún" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
       "Complete la frase: Para medir la solubilidad del NaCl en agua destilada, se añade NaCl hasta que la solución se ________.",
     options: [
-      { type: "text", value: "a) sature" },
+      { type: "text", value: "a) sublime" },
       { type: "text", value: "b) evapore" },
       { type: "text", value: "c) condense" },
-      { type: "text", value: "d) sublime" },
+      { type: "text", value: "d) sature" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
@@ -414,12 +422,12 @@ const practica6_quimica = [
     options: [
       {
         type: "text",
-        value:
-          "a) Un método químico para detectar la presencia de ciertos elementos químicos",
+        value: "a) Un método para medir la temperatura de una llama",
       },
       {
         type: "text",
-        value: "b) Un método para medir la temperatura de una llama",
+        value:
+          "b) Un método químico para detectar la presencia de ciertos elementos químicos",
       },
       {
         type: "text",
@@ -430,14 +438,14 @@ const practica6_quimica = [
         value: "d) Una técnica para crear nuevos compuestos químicos",
       },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question: "¿Qué se detecta principalmente con el ensayo a la llama?",
     options: [
       {
         type: "text",
-        value: "a) Iones de metales",
+        value: "a) Ácidos fuertes",
       },
       {
         type: "text",
@@ -449,10 +457,10 @@ const practica6_quimica = [
       },
       {
         type: "text",
-        value: "d) Ácidos fuertes",
+        value: "d) Iones de metales",
       },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
@@ -475,14 +483,14 @@ const practica6_quimica = [
     options: [
       {
         type: "text",
-        value: "a) Falso",
+        value: "a) Verdadero",
       },
       {
         type: "text",
-        value: "b) Verdadero",
+        value: "b) Falso",
       },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -490,7 +498,7 @@ const practica6_quimica = [
     options: [
       {
         type: "text",
-        value: "a) fundamental",
+        value: "a) líquido",
       },
       {
         type: "text",
@@ -498,14 +506,14 @@ const practica6_quimica = [
       },
       {
         type: "text",
-        value: "c) líquido",
+        value: "c) fundamental",
       },
       {
         type: "text",
         value: "d) plasmático",
       },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question: "El ensayo a la llama es un método basado en:",
@@ -535,22 +543,22 @@ const practica7_quimica = [
   {
     question: "¿Qué significa pH?",
     options: [
-      { type: "text", value: "a) Potencial hidrógeno" },
+      { type: "text", value: "a) Presión hidrostática" },
       { type: "text", value: "b) Poder hidratante" },
-      { type: "text", value: "c) Presión hidrostática" },
+      { type: "text", value: "c) Potencial hidrógeno" },
       { type: "text", value: "d) Porcentaje de hidrógeno" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question: "¿Cuál es el rango de la escala de pH?",
     options: [
-      { type: "text", value: "a) 0 a 14" },
+      { type: "text", value: "a) -14 a 14" },
       { type: "text", value: "b) -7 a 7" },
       { type: "text", value: "c) 1 a 100" },
-      { type: "text", value: "d) -14 a 14" },
+      { type: "text", value: "d) 0 a 14" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question: "¿Qué método de medición de pH utiliza sustancias indicadoras?",
@@ -575,10 +583,10 @@ const practica7_quimica = [
   {
     question: "Las sustancias más ácidas tienen un pH cercano a 14.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question: "El papel tornasol es un ejemplo de indicador de pH.",
@@ -592,12 +600,12 @@ const practica7_quimica = [
     question:
       "Complete la frase: Las antocianinas son pigmentos ________ que pueden usarse como indicadores de pH.",
     options: [
-      { type: "text", value: "a) vegetales" },
-      { type: "text", value: "b) sintéticos" },
+      { type: "text", value: "a) sintéticos" },
+      { type: "text", value: "b) vegetales" },
       { type: "text", value: "c) minerales" },
       { type: "text", value: "d) bacterianos" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
 ];
 
@@ -649,29 +657,29 @@ const practica8_quimica = [
     question:
       "La cromatografía se utiliza a menudo para identificar los componentes responsables del ________, ________ y ________ de los frutos.",
     options: [
-      { type: "text", value: "a) aroma, color, sabor" },
+      { type: "text", value: "a) pH, acidez, alcalinidad" },
       { type: "text", value: "b) tamaño, peso, textura" },
       { type: "text", value: "c) forma, densidad, volumen" },
-      { type: "text", value: "d) pH, acidez, alcalinidad" },
+      { type: "text", value: "d) aroma, color, sabor" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question: "El factor de retardo (Rf) es siempre mayor que 1.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question: "En la cromatografía líquido-líquido",
     options: [
-      { type: "text", value: "a) La fase estacionaria es un líquido" },
+      { type: "text", value: "a) La fase móvil es un sólido" },
       { type: "text", value: "b) La fase estacionaria es un sólido" },
-      { type: "text", value: "c) La fase móvil es un sólido" },
+      { type: "text", value: "c) La fase estacionaria es un líquido" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question: "En la Cromatografía sólido-líquido",
@@ -691,12 +699,12 @@ const practica9_quimica = [
     options: [
       {
         type: "text",
-        value:
-          "a) Una técnica de análisis cuantitativo para determinar la concentración de una solución ácida o básica",
+        value: "a) Un método para medir el pH de una solución",
       },
       {
         type: "text",
-        value: "b) Un método para medir el pH de una solución",
+        value:
+          "b) Una técnica de análisis cuantitativo para determinar la concentración de una solución ácida o básica",
       },
       {
         type: "text",
@@ -707,7 +715,7 @@ const practica9_quimica = [
         value: "d) Un proceso para sintetizar nuevos compuestos químicos",
       },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question: "¿Qué indicador se utiliza en la práctica virtual descrita?",
@@ -744,21 +752,21 @@ const practica9_quimica = [
     question:
       "En una valoración ácido-base, el volumen de las soluciones no es importante para los cálculos.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
       "La valoración ácido-base se basa en una reacción de ________ entre el analito y la sustancia valorante.",
     options: [
-      { type: "text", value: "a) neutralización" },
+      { type: "text", value: "a) precipitación" },
       { type: "text", value: "b) oxidación" },
       { type: "text", value: "c) reducción" },
-      { type: "text", value: "d) precipitación" },
+      { type: "text", value: "d) neutralización" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
 ];
 
@@ -777,31 +785,31 @@ const practica10_quimica = [
   {
     question: "¿Cuál es el propósito principal de la galvanización?",
     options: [
-      { type: "text", value: "a) Proteger la superficie del metal" },
+      { type: "text", value: "a) Reducir el peso del metal" },
       { type: "text", value: "b) Aumentar la conductividad eléctrica" },
       { type: "text", value: "c) Cambiar el color del metal" },
-      { type: "text", value: "d) Reducir el peso del metal" },
+      { type: "text", value: "d) Proteger la superficie del metal" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
       "En el galvanizado común, ¿qué metal se deposita sobre el hierro?",
     options: [
-      { type: "text", value: "a) Zinc" },
+      { type: "text", value: "a) Aluminio" },
       { type: "text", value: "b) Cobre" },
-      { type: "text", value: "c) Aluminio" },
+      { type: "text", value: "c) Zinc" },
       { type: "text", value: "d) Níquel" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question: "La galvanización solo se puede realizar con zinc.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -816,12 +824,12 @@ const practica10_quimica = [
     question:
       "La galvanización es un proceso ________ para recubrir un metal con otro.",
     options: [
-      { type: "text", value: "a) electroquímico" },
+      { type: "text", value: "a) físico" },
       { type: "text", value: "b) térmico" },
       { type: "text", value: "c) mecánico" },
-      { type: "text", value: "d) físico" },
+      { type: "text", value: "d) electroquímico" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
 ];
 
@@ -829,12 +837,12 @@ const practica11_quimica = [
   {
     question: "¿Cuál es el principal objetivo de la electrólisis del agua?",
     options: [
-      { type: "text", value: "a) Producir hidrógeno y oxígeno puros" },
+      { type: "text", value: "a) Purificar el agua" },
       { type: "text", value: "b) Generar electricidad" },
-      { type: "text", value: "c) Purificar el agua" },
+      { type: "text", value: "c) Producir hidrógeno y oxígeno puros" },
       { type: "text", value: "d) Calentar el agua" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question: "¿Qué tipo de corriente se utiliza en la electrólisis del agua?",
@@ -849,21 +857,21 @@ const practica11_quimica = [
   {
     question: "En el cátodo de la celda electrolítica se produce:",
     options: [
-      { type: "text", value: "a) Hidrógeno" },
-      { type: "text", value: "b) Oxígeno" },
+      { type: "text", value: "a) Oxígeno" },
+      { type: "text", value: "b) Hidrógeno" },
       { type: "text", value: "c) Cloro" },
       { type: "text", value: "d) Sodio" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
       "En la electrólisis del agua se produce el doble de oxígeno que de hidrógeno.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -877,12 +885,12 @@ const practica11_quimica = [
   {
     question: "¿Cuáles son los iones presentes en el agua?",
     options: [
-      { type: "text", value: "a) H2 Y O" },
+      { type: "text", value: "a) H+ y OH-" },
       { type: "text", value: "b) H y OH" },
       { type: "text", value: "c) H2 y O2" },
-      { type: "text", value: "d) H+ y OH-" },
+      { type: "text", value: "d) H2 Y O" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
 ];
 
@@ -892,14 +900,17 @@ const practica12_quimica = [
     options: [
       {
         type: "text",
-        value:
-          "a) La medición e interpretación del calor en procesos químicos, físicos y biológicos",
+        value: "a) La estructura molecular de los compuestos",
       },
-      { type: "text", value: "b) La estructura molecular de los compuestos" },
+      {
+        type: "text",
+        value:
+          "b) La medición e interpretación del calor en procesos químicos, físicos y biológicos",
+      },
       { type: "text", value: "c) La velocidad de las reacciones químicas" },
       { type: "text", value: "d) La presión en sistemas cerrados" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question: "En una reacción exotérmica:",
@@ -914,23 +925,23 @@ const practica12_quimica = [
   {
     question: "El cambio de entalpía (ΔH) en una reacción endotérmica es:",
     options: [
-      { type: "text", value: "a) Positivo" },
+      { type: "text", value: "a) Variable" },
       { type: "text", value: "b) Negativo" },
       { type: "text", value: "c) Cero" },
-      { type: "text", value: "d) Variable" },
+      { type: "text", value: "d) Positivo" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
       "Una reacción química que absorbe calor de su entorno se denomina:",
     options: [
-      { type: "text", value: "a) Endotérmica" },
+      { type: "text", value: "a) Analítica" },
       { type: "text", value: "b) Orgánica" },
-      { type: "text", value: "c) Analítica" },
+      { type: "text", value: "c) Endotérmica" },
       { type: "text", value: "d) Exotérmica" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
   {
     question:
@@ -945,10 +956,10 @@ const practica12_quimica = [
     question:
       "En una reacción endotérmica, el cambio de entalpía (ΔH) es negativo.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -968,12 +979,12 @@ const practica13_quimica = [
     question:
       "¿Cuál es el componente principal del gel humectante en esta práctica?",
     options: [
-      { type: "text", value: "a) Aloe vera" },
+      { type: "text", value: "a) Aceite esencial" },
       { type: "text", value: "b) Glicerina" },
       { type: "text", value: "c) Vitamina E" },
-      { type: "text", value: "d) Aceite esencial" },
+      { type: "text", value: "d) Aloe vera" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question: "¿Qué función cumple la glicerina en el gel?",
@@ -999,12 +1010,12 @@ const practica13_quimica = [
     question:
       "¿Qué sustancia se recomienda para mejorar la viscosidad del gel?",
     options: [
-      { type: "text", value: "a) Goma xantana" },
+      { type: "text", value: "a) Elastina" },
       { type: "text", value: "b) Aloína" },
       { type: "text", value: "c) Colágeno" },
-      { type: "text", value: "d) Elastina" },
+      { type: "text", value: "d) Goma xantana" },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
@@ -1020,13 +1031,16 @@ const practica13_quimica = [
     options: [
       {
         type: "text",
-        value: "a) Ayuda a retener la humedad presente en la piel",
+        value: "a) Es un aceite",
       },
-      { type: "text", value: "b) Es un aceite" },
+      {
+        type: "text",
+        value: "b) Ayuda a retener la humedad presente en la piel",
+      },
       { type: "text", value: "c) Es un colorante" },
       { type: "text", value: "d) Ninguna es correcta" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
 ];
 
@@ -1034,20 +1048,19 @@ const practica14_quimica = [
   {
     question: "¿Quiénes plantearon la Ley de la Conservación de la Masa?",
     options: [
-      { type: "text", value: "a) Mijaíl Lomonósov y Antonie Lavoisier" },
-      { type: "text", value: "b) Isaac Newton y Albert Einstein" },
+      { type: "text", value: "a) Isaac Newton y Albert Einstein" },
+      { type: "text", value: "b) Mijaíl Lomonósov y Antonie Lavoisier" },
       { type: "text", value: "c) Marie Curie y Pierre Curie" },
       { type: "text", value: "d) Dimitri Mendeléyev y Niels Bohr" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question: "La Ley de la Conservación de la Masa establece que:",
     options: [
       {
         type: "text",
-        value:
-          "a) Los átomos no se crean ni se destruyen durante una reacción química",
+        value: "a) Los átomos se transforman en energía",
       },
       {
         type: "text",
@@ -1057,20 +1070,24 @@ const practica14_quimica = [
         type: "text",
         value: "c) La masa disminuye durante una reacción química",
       },
-      { type: "text", value: "d) Los átomos se transforman en energía" },
+      {
+        type: "text",
+        value:
+          "d) Los átomos no se crean ni se destruyen durante una reacción química",
+      },
     ],
-    correctOption: 1,
+    correctOption: 4,
   },
   {
     question:
       "¿En qué tipo de sistemas es aplicable la Ley de la Conservación de la Masa?",
     options: [
-      { type: "text", value: "a) Sistemas cerrados" },
-      { type: "text", value: "b) Sistemas abiertos" },
+      { type: "text", value: "a) Sistemas abiertos" },
+      { type: "text", value: "b) Sistemas cerrados" },
       { type: "text", value: "c) Sistemas aislados" },
       { type: "text", value: "d) Sistemas infinitos" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -1085,10 +1102,10 @@ const practica14_quimica = [
     question:
       "La Ley de la Conservación de la Masa implica que el universo produce constantemente nueva materia.",
     options: [
-      { type: "text", value: "a) Falso" },
-      { type: "text", value: "b) Verdadero" },
+      { type: "text", value: "a) Verdadero" },
+      { type: "text", value: "b) Falso" },
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
     question:
@@ -1105,12 +1122,12 @@ const practica14_quimica = [
     question:
       "Complete el enunciado: Según la Ley de la Conservación de la Masa, la masa total de los ________ es igual a la masa total de los productos.",
     options: [
-      { type: "text", value: "a) reactivos" },
+      { type: "text", value: "a) productos" },
       { type: "text", value: "b) catalizadores" },
-      { type: "text", value: "c) productos" },
+      { type: "text", value: "c) reactivos" },
       { type: "text", value: "d) inhibidores" },
     ],
-    correctOption: 1,
+    correctOption: 3,
   },
 ];
 
