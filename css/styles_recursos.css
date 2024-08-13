@@ -48,3 +48,7 @@ body {
         width: calc(100% / 2 - 10px);
     }
 }
+
+.container-re {
+    min-height: 100vh;
+}
