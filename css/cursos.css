@@ -1,12 +1,16 @@
 .module {
     display: none;
     transition: opacity 0.5s ease;
+    /* Define la animación de transición */
     opacity: 0;
+    /* Inicialmente, los módulos están ocultos */
 }
+
 
 .module.active {
     display: block;
     opacity: 1;
+    /* Cuando un módulo está activo, se muestra con una animación de desvanecimiento */
 }
 
 #modulos img {
